@@ -11,7 +11,7 @@
 | **AsciiRadioGroup**  | Form       | `( ) Option` / `(•) Selected` radio buttons          | ⭐ High   | ✅ Done |
 | **AsciiTextarea**    | Form       | Multi-line ASCII text box `[ ... ]`                  | ⭐ High   | ✅ Done |
 | **AsciiAlert**       | Feedback   | `(!) Error: Something went wrong` message            | ⭐ High   | ✅ Done |
-| **AsciiBadge**       | Feedback   | `[ NEW ]` / `{ Info }` small tag                     | ⭐ High   | ⬜ Todo |
+| **AsciiBadge**       | Feedback   | `[ NEW ]` / `{ Info }` small tag                     | ⭐ High   | ✅ Done |
 | **AsciiLoader**      | Feedback   | `...loading...` or `[▓▓░░░░]` progress indicator     | ⭐ High   | ⬜ Todo |
 | **AsciiNavbar**      | Navigation | Top bar: `[ Dashboard ] [ Products ] [ Settings ]`   | ⭐ Medium | ⬜ Todo |
 | **AsciiSidebar**     | Navigation | Vertical nav menu `[ Item ]` with active state       | ⭐ Medium | ⬜ Todo |

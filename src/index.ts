@@ -7,3 +7,4 @@ export * from "./components/AsciiCard";
 export * from "./components/AsciiRadioGroup";
 export * from "./components/AsciiTextarea";
 export * from "./components/AsciiAlert";
+export * from "./components/AsciiBadge";
