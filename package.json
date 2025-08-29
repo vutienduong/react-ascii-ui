@@ -1,0 +1,28 @@
+{
+  "name": "react-ascii-ui",
+  "version": "0.1.0",
+  "description": "ASCII-styled React UI components for fun retro dashboards and apps",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "dev": "tsup src/index.ts --watch",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsup": "^7.3.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  },
+  "keywords": ["ascii", "ui", "react", "tailwind", "retro", "cli", "tui"],
+  "author": "Mikel Vu",
+  "license": "MIT"
+}
