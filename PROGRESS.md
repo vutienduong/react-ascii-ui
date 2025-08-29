@@ -25,7 +25,7 @@
 | **AsciiProgressBar** | Feedback   | `▓▓▓░░░░ (40%)` loading bar                          | ⭐ Medium | ✅ Done |
 | **AsciiSwitch**      | Form       | `[ ON ] / [ OFF ]` toggle switch                     | ⭐ Low    | ✅ Done |
 | **AsciiCalendar**    | Utility    | ASCII month grid (Mon–Sun + dates)                   | ⭐ Low    | ✅ Done |
-| **AsciiAvatar**      | Utility    | `(@MV)` user initials                                | ⭐ Low    | ⬜ Todo |
+| **AsciiAvatar**      | Utility    | `(@MV)` user initials                                | ⭐ Low    | ✅ Done |
 | **AsciiChart**       | Utility    | Inline ASCII chart `▇▇▇▃▂`                           | ⭐ Low    | ⬜ Todo |
 
 ---
