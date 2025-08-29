@@ -15,7 +15,7 @@
 | **AsciiLoader**      | Feedback   | `...loading...` or `[▓▓░░░░]` progress indicator     | ⭐ High   | ✅ Done |
 | **AsciiNavbar**      | Navigation | Top bar: `[ Dashboard ] [ Products ] [ Settings ]`   | ⭐ Medium | ✅ Done |
 | **AsciiSidebar**     | Navigation | Vertical nav menu `[ Item ]` with active state       | ⭐ Medium | ✅ Done |
-| **AsciiTabs**        | Navigation | `[ Tab1 ] [ Tab2 ] [ Tab3 ]`                         | ⭐ Medium | ⬜ Todo |
+| **AsciiTabs**        | Navigation | `[ Tab1 ] [ Tab2 ] [ Tab3 ]`                         | ⭐ Medium | ✅ Done |
 | **AsciiAccordion**   | Navigation | Expandable ASCII section `> Title`                   | ⭐ Medium | ⬜ Todo |
 | **AsciiTable**       | Layout     | ASCII-styled grid table                              | ⭐ Medium | ⬜ Todo |
 | **AsciiPagination**  | Navigation | `[ Prev ] 1 2 3 [ Next ]` pager                      | ⭐ Medium | ⬜ Todo |
