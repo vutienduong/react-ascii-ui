@@ -1,6 +1,8 @@
 # React ASCII UI
 
-A tiny React + Tailwind component library for **ASCII-style UIs** 🎨
+A complete React + Tailwind component library for **ASCII-style UIs** 🎨
+
+Perfect for retro dashboards, hackathon projects, developer tools, and adding some ASCII flair to your apps!
 
 ## Install
 
@@ -8,22 +10,121 @@ A tiny React + Tailwind component library for **ASCII-style UIs** 🎨
 npm install react-ascii-ui
 ```
 
-## Usage
+## Quick Start
 
 ```tsx
-import { AsciiButton, AsciiInput, AsciiSelect, AsciiDivider } from "react-ascii-ui";
+import { 
+  AsciiButton, 
+  AsciiInput, 
+  AsciiSelect, 
+  AsciiDivider,
+  AsciiCard,
+  AsciiAlert 
+} from "react-ascii-ui";
 
 export default function Demo() {
   return (
     <div className="bg-black text-white p-4 space-y-4">
-      <AsciiInput placeholder="Search..." />
-      <AsciiSelect>
-        <option>All</option>
-        <option>Newest</option>
-      </AsciiSelect>
-      <AsciiButton onClick={() => alert("Clicked!")}>Generate</AsciiButton>
-      <AsciiDivider />
+      <AsciiCard title="Dashboard">
+        <AsciiAlert variant="info" title="Welcome">
+          Ready to build some ASCII magic?
+        </AsciiAlert>
+        
+        <div className="space-y-2 mt-4">
+          <AsciiInput placeholder="Search..." />
+          <AsciiSelect>
+            <option>All Items</option>
+            <option>Recent</option>
+            <option>Favorites</option>
+          </AsciiSelect>
+          <AsciiButton onClick={() => alert("ASCII!")}>
+            [ Generate ]
+          </AsciiButton>
+        </div>
+        
+        <AsciiDivider />
+      </AsciiCard>
     </div>
   );
 }
 ```
+
+## 📦 Complete Component Library
+
+**29 components** across 4 tiers - everything you need for ASCII UIs:
+
+### 🔧 Forms & Inputs
+- `AsciiButton` - `[ Click Me ]` clickable buttons
+- `AsciiInput` - `[ ________ ]` text inputs  
+- `AsciiSelect` - `[ Option ▼ ]` dropdowns
+- `AsciiCheckbox` - `[x] Checked` / `[ ] Unchecked`
+- `AsciiRadioGroup` - `(•) Selected` / `( ) Option`
+- `AsciiTextarea` - Multi-line text input
+- `AsciiSwitch` - `[ ON ]` / `[ OFF ]` toggles
+
+### 📐 Layout & Structure
+- `AsciiCard` - Bordered containers with optional titles
+- `AsciiDivider` - `--------------------` separators
+- `AsciiTable` - Data tables with ASCII borders
+- `AsciiNavbar` - Top navigation bars
+- `AsciiSidebar` - Vertical navigation menus
+- `AsciiTabs` - `[ Tab1 ] [ Tab2 ] [ Tab3 ]`
+- `AsciiAccordion` - Expandable sections
+- `AsciiPagination` - `[ Prev ] 1 2 3 [ Next ]`
+
+### 💬 Feedback & Overlays
+- `AsciiAlert` - `(!) Error` / `(✓) Success` messages
+- `AsciiBadge` - `[ NEW ]` / `{ Info }` tags
+- `AsciiLoader` - `...loading...` / `[▓▓░░░░]` progress
+- `AsciiModal` - Popup dialogs with borders
+- `AsciiToast` - Floating notifications
+- `AsciiTooltip` - Hover info with `^ arrows`
+- `AsciiProgressBar` - `▓▓▓░░░░ (40%)` progress bars
+
+### 🎨 Utilities & Fun
+- `AsciiCalendar` - Month grids for date selection
+- `AsciiAvatar` - `(@UV)` user initials
+- `AsciiChart` - `▇▇▇▃▂` data visualization
+
+## 🎯 Features
+
+- **TypeScript** - Fully typed with IntelliSense support
+- **Tailwind CSS** - Styled with utility classes
+- **Accessible** - Keyboard navigation and ARIA support  
+- **Consistent API** - Predictable props across all components
+- **Customizable** - Color themes, sizes, and variants
+- **Zero Dependencies** - Only peer deps: React 18+ and Tailwind
+
+## 🎨 Styling
+
+Components work best with dark backgrounds and monospace fonts:
+
+```tsx
+// Recommended container styling
+<div className="bg-black text-white font-mono p-4">
+  {/* Your ASCII components */}
+</div>
+```
+
+All components support `className` prop for customization and follow consistent color patterns:
+- **White**: Default text and borders
+- **Green**: Active/success states and hover effects  
+- **Yellow**: Warning states and "today" highlights
+- **Red**: Error states and danger actions
+- **Blue**: Info states and primary actions
+
+## 🚀 Perfect For
+
+- **Developer Tools** - CLIs, terminals, coding environments
+- **Retro Dashboards** - Monitoring, analytics, admin panels  
+- **Hackathon Projects** - Stand out with unique ASCII styling
+- **Easter Eggs** - Hidden ASCII modes in existing apps
+- **Prototyping** - Quick and distinctive UI mockups
+
+## 📝 License
+
+MIT © Mikel Vu
+
+---
+
+*Built with ❤️ for the ASCII aesthetic revolution* 🎯
