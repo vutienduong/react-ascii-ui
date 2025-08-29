@@ -5,3 +5,4 @@ export * from "./components/AsciiDivider";
 export * from "./components/AsciiCheckbox";
 export * from "./components/AsciiCard";
 export * from "./components/AsciiRadioGroup";
+export * from "./components/AsciiTextarea";

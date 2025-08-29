@@ -9,7 +9,7 @@
 | **AsciiDivider**     | Layout     | `--------------------------------------------------` | ⭐ High   | ✅ Done |
 | **AsciiCard**        | Layout     | ASCII-styled container (bordered box)                | ⭐ High   | ✅ Done |
 | **AsciiRadioGroup**  | Form       | `( ) Option` / `(•) Selected` radio buttons          | ⭐ High   | ✅ Done |
-| **AsciiTextarea**    | Form       | Multi-line ASCII text box `[ ... ]`                  | ⭐ High   | ⬜ Todo |
+| **AsciiTextarea**    | Form       | Multi-line ASCII text box `[ ... ]`                  | ⭐ High   | ✅ Done |
 | **AsciiAlert**       | Feedback   | `(!) Error: Something went wrong` message            | ⭐ High   | ⬜ Todo |
 | **AsciiBadge**       | Feedback   | `[ NEW ]` / `{ Info }` small tag                     | ⭐ High   | ⬜ Todo |
 | **AsciiLoader**      | Feedback   | `...loading...` or `[▓▓░░░░]` progress indicator     | ⭐ High   | ⬜ Todo |
