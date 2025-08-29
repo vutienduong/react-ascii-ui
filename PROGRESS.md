@@ -20,7 +20,7 @@
 | **AsciiTable**       | Layout     | ASCII-styled grid table                              | ⭐ Medium | ✅ Done |
 | **AsciiPagination**  | Navigation | `[ Prev ] 1 2 3 [ Next ]` pager                      | ⭐ Medium | ✅ Done |
 | **AsciiModal**       | Overlay    | ASCII popup box with `[ Confirm ] [ Cancel ]`        | ⭐ Medium | ✅ Done |
-| **AsciiToast**       | Feedback   | Floating ASCII notification `(!) Saved successfully` | ⭐ Medium | ⬜ Todo |
+| **AsciiToast**       | Feedback   | Floating ASCII notification `(!) Saved successfully` | ⭐ Medium | ✅ Done |
 | **AsciiTooltip**     | Feedback   | Inline hover `^ Info`                                | ⭐ Medium | ⬜ Todo |
 | **AsciiProgressBar** | Feedback   | `▓▓▓░░░░ (40%)` loading bar                          | ⭐ Medium | ⬜ Todo |
 | **AsciiSwitch**      | Form       | `[ ON ] / [ OFF ]` toggle switch                     | ⭐ Low    | ⬜ Todo |
