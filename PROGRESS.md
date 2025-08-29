@@ -13,7 +13,7 @@
 | **AsciiAlert**       | Feedback   | `(!) Error: Something went wrong` message            | ⭐ High   | ✅ Done |
 | **AsciiBadge**       | Feedback   | `[ NEW ]` / `{ Info }` small tag                     | ⭐ High   | ✅ Done |
 | **AsciiLoader**      | Feedback   | `...loading...` or `[▓▓░░░░]` progress indicator     | ⭐ High   | ✅ Done |
-| **AsciiNavbar**      | Navigation | Top bar: `[ Dashboard ] [ Products ] [ Settings ]`   | ⭐ Medium | ⬜ Todo |
+| **AsciiNavbar**      | Navigation | Top bar: `[ Dashboard ] [ Products ] [ Settings ]`   | ⭐ Medium | ✅ Done |
 | **AsciiSidebar**     | Navigation | Vertical nav menu `[ Item ]` with active state       | ⭐ Medium | ⬜ Todo |
 | **AsciiTabs**        | Navigation | `[ Tab1 ] [ Tab2 ] [ Tab3 ]`                         | ⭐ Medium | ⬜ Todo |
 | **AsciiAccordion**   | Navigation | Expandable ASCII section `> Title`                   | ⭐ Medium | ⬜ Todo |

@@ -9,3 +9,4 @@ export * from "./components/AsciiTextarea";
 export * from "./components/AsciiAlert";
 export * from "./components/AsciiBadge";
 export * from "./components/AsciiLoader";
+export * from "./components/AsciiNavbar";
