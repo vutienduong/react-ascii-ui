@@ -1,0 +1,20 @@
+
+name: "Component Request"
+description: "Request or propose a new ASCII component"
+labels: [component]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Component Name
+      description: e.g. AsciiButton
+  - type: textarea
+    id: usage
+    attributes:
+      label: Usage / ASCII Style
+      description: Show ASCII example of how it should look
+  - type: textarea
+    id: props
+    attributes:
+      label: Props / Variants
+      description: Required props, states, variants

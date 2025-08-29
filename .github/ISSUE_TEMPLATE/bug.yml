@@ -1,0 +1,13 @@
+
+name: "Bug Report"
+description: "Report a bug in react-ascii-ui"
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce

@@ -1,0 +1,8 @@
+name: "Enhancement"
+description: "Improve an existing component or add new feature"
+labels: [enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What should be improved?
