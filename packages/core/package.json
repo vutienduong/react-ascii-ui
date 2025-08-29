@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "ASCII-styled React UI components for fun retro dashboards and apps",
   "main": "dist/index.js",
-  "module": "dist/index.mjs", 
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -15,12 +15,12 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/react-ascii-ui.git",
+    "url": "https://github.com/vutienduong/react-ascii-ui.git",
     "directory": "packages/core"
   },
   "homepage": "https://react-ascii-ui.dev",
   "bugs": {
-    "url": "https://github.com/your-username/react-ascii-ui/issues"
+    "url": "https://github.com/vutienduong/react-ascii-ui/issues"
   },
   "publishConfig": {
     "access": "public"
