@@ -17,3 +17,4 @@ export * from "./components/AsciiTable";
 export * from "./components/AsciiPagination";
 export * from "./components/AsciiModal";
 export * from "./components/AsciiToast";
+export * from "./components/AsciiTooltip";

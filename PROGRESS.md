@@ -21,7 +21,7 @@
 | **AsciiPagination**  | Navigation | `[ Prev ] 1 2 3 [ Next ]` pager                      | ⭐ Medium | ✅ Done |
 | **AsciiModal**       | Overlay    | ASCII popup box with `[ Confirm ] [ Cancel ]`        | ⭐ Medium | ✅ Done |
 | **AsciiToast**       | Feedback   | Floating ASCII notification `(!) Saved successfully` | ⭐ Medium | ✅ Done |
-| **AsciiTooltip**     | Feedback   | Inline hover `^ Info`                                | ⭐ Medium | ⬜ Todo |
+| **AsciiTooltip**     | Feedback   | Inline hover `^ Info`                                | ⭐ Medium | ✅ Done |
 | **AsciiProgressBar** | Feedback   | `▓▓▓░░░░ (40%)` loading bar                          | ⭐ Medium | ⬜ Todo |
 | **AsciiSwitch**      | Form       | `[ ON ] / [ OFF ]` toggle switch                     | ⭐ Low    | ⬜ Todo |
 | **AsciiCalendar**    | Utility    | ASCII month grid (Mon–Sun + dates)                   | ⭐ Low    | ⬜ Todo |
