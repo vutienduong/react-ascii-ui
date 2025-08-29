@@ -7,7 +7,7 @@
 | **AsciiSelect**      | Form       | `[ Option ▼ ]` dropdown select                       | ⭐ High   | ✅ Done |
 | **AsciiCheckbox**    | Form       | `[x] Label` / `[ ] Label` toggleable checkbox        | ⭐ High   | ✅ Done |
 | **AsciiDivider**     | Layout     | `--------------------------------------------------` | ⭐ High   | ✅ Done |
-| **AsciiCard**        | Layout     | ASCII-styled container (bordered box)                | ⭐ High   | ⬜ Todo |
+| **AsciiCard**        | Layout     | ASCII-styled container (bordered box)                | ⭐ High   | ✅ Done |
 | **AsciiRadioGroup**  | Form       | `( ) Option` / `(•) Selected` radio buttons          | ⭐ High   | ⬜ Todo |
 | **AsciiTextarea**    | Form       | Multi-line ASCII text box `[ ... ]`                  | ⭐ High   | ⬜ Todo |
 | **AsciiAlert**       | Feedback   | `(!) Error: Something went wrong` message            | ⭐ High   | ⬜ Todo |
