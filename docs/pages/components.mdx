@@ -1,0 +1,212 @@
+import AsciiPreview from '../components/AsciiPreview';
+
+# Components
+
+Explore all React ASCII UI components with live examples and code snippets.
+
+## Forms & Input
+
+### AsciiButton
+
+The foundation of ASCII UI - a button that embraces the retro aesthetic.
+
+<AsciiPreview 
+  title="AsciiButton" 
+  description="Basic button with ASCII brackets"
+  code={`<AsciiButton onClick={() => alert('Hello!')}>
+  Click Me
+</AsciiButton>`}
+>
+  <button className="font-mono text-white hover:text-green-400 before:content-['['] after:content-[']'] px-1 cursor-pointer outline-none">
+    Click Me
+  </button>
+</AsciiPreview>
+
+### AsciiInput
+
+Text input with ASCII styling for forms.
+
+<AsciiPreview 
+  title="AsciiInput" 
+  description="Text input with ASCII border"
+  code={`<AsciiInput 
+  placeholder="Enter text..."
+  defaultValue="Sample text"
+/>`}
+>
+  <input 
+    className="bg-black text-white font-mono border border-white p-2 outline-none focus:border-green-400 placeholder-gray-500"
+    placeholder="Enter text..."
+    defaultValue="Sample text"
+  />
+</AsciiPreview>
+
+### AsciiCheckbox
+
+Checkbox with ASCII checkmarks.
+
+<AsciiPreview 
+  title="AsciiCheckbox" 
+  description="Checkbox with [X] styling"
+  code={`<AsciiCheckbox defaultChecked>
+  Accept terms
+</AsciiCheckbox>`}
+>
+  <label className="font-mono text-white flex items-center gap-2">
+    <span className="w-6 h-6 border border-white flex items-center justify-center bg-black">
+      <span className="text-green-400">X</span>
+    </span>
+    Accept terms
+  </label>
+</AsciiPreview>
+
+## Layout & Structure
+
+### AsciiCard
+
+Container component for organizing content.
+
+<AsciiPreview 
+  title="AsciiCard" 
+  description="Card with ASCII border and title"
+  code={`<AsciiCard title="User Profile">
+  <p>Welcome back, User!</p>
+  <AsciiButton>Edit Profile</AsciiButton>
+</AsciiCard>`}
+>
+  <div className="border border-white bg-black text-white font-mono">
+    <div className="border-b border-white p-3 bg-gray-900">
+      <h3 className="text-green-400 font-bold">User Profile</h3>
+    </div>
+    <div className="p-4 space-y-2">
+      <p>Welcome back, User!</p>
+      <button className="font-mono text-white hover:text-green-400 before:content-['['] after:content-[']'] px-1">
+        Edit Profile
+      </button>
+    </div>
+  </div>
+</AsciiPreview>
+
+### AsciiNavbar
+
+Navigation component with ASCII styling.
+
+<AsciiPreview 
+  title="AsciiNavbar" 
+  description="Horizontal navigation bar"
+  code={`<AsciiNavbar>
+  <AsciiNavbar.Brand>My App</AsciiNavbar.Brand>
+  <AsciiNavbar.Item href="/">Home</AsciiNavbar.Item>
+  <AsciiNavbar.Item href="/about">About</AsciiNavbar.Item>
+</AsciiNavbar>`}
+>
+  <nav className="border border-white bg-black text-white font-mono p-3 flex items-center justify-between">
+    <div className="text-green-400 font-bold">My App</div>
+    <div className="flex gap-4">
+      <a href="#" className="hover:text-green-400 before:content-['['] after:content-[']'] px-1">Home</a>
+      <a href="#" className="hover:text-green-400 before:content-['['] after:content-[']'] px-1">About</a>
+    </div>
+  </nav>
+</AsciiPreview>
+
+## Feedback & Display
+
+### AsciiAlert
+
+Alert messages with ASCII styling.
+
+<AsciiPreview 
+  title="AsciiAlert" 
+  description="Alert with different variants"
+  code={`<AsciiAlert variant="success">
+  Operation completed successfully!
+</AsciiAlert>`}
+>
+  <div className="border border-green-400 bg-black text-green-400 font-mono p-3 mb-2">
+    <span className="font-bold">[SUCCESS]</span> Operation completed successfully!
+  </div>
+</AsciiPreview>
+
+### AsciiModal
+
+Modal dialogs with ASCII frames.
+
+<AsciiPreview 
+  title="AsciiModal" 
+  description="Modal dialog with ASCII border"
+  code={`<AsciiModal open={true} title="Confirm Action">
+  <p>Are you sure you want to continue?</p>
+  <AsciiButton>Yes</AsciiButton>
+  <AsciiButton>No</AsciiButton>
+</AsciiModal>`}
+>
+  <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center">
+    <div className="border border-white bg-black text-white font-mono max-w-md">
+      <div className="border-b border-white p-3 bg-gray-900">
+        <h3 className="text-green-400 font-bold">Confirm Action</h3>
+      </div>
+      <div className="p-4 space-y-4">
+        <p>Are you sure you want to continue?</p>
+        <div className="flex gap-2">
+          <button className="font-mono text-white hover:text-green-400 before:content-['['] after:content-[']'] px-1">Yes</button>
+          <button className="font-mono text-white hover:text-green-400 before:content-['['] after:content-[']'] px-1">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</AsciiPreview>
+
+## Component Props
+
+All components extend their respective HTML element props and accept additional styling through the `className` prop.
+
+### Common Props
+
+- `className?: string` - Additional CSS classes
+- `children?: React.ReactNode` - Child elements
+- All standard HTML attributes for the respective element type
+
+### Example with TypeScript
+
+```tsx
+import { AsciiButton } from 'react-ascii-ui';
+
+interface Props {
+  onSubmit: () => void;
+  disabled?: boolean;
+}
+
+const SubmitButton: React.FC<Props> = ({ onSubmit, disabled }) => {
+  return (
+    <AsciiButton
+      onClick={onSubmit}
+      disabled={disabled}
+      className="text-green-400"
+      type="submit"
+    >
+      Submit Form
+    </AsciiButton>
+  );
+};
+```
+
+## Customization
+
+All components can be customized with Tailwind CSS classes:
+
+```tsx
+// Custom colors
+<AsciiButton className="text-red-400 border-red-400 hover:bg-red-900">
+  Danger
+</AsciiButton>
+
+// Custom spacing
+<AsciiCard className="m-4 p-6" title="Spaced Card">
+  Content with custom spacing
+</AsciiCard>
+
+// Custom fonts (if you want to override mono)
+<AsciiAlert className="font-sans">
+  Alert with custom font
+</AsciiAlert>
+```

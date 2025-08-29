@@ -8,14 +8,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "outDir": "dist",
+    "declaration": true
   },
-  "references": [
-    {
-      "path": "./packages/core"
-    },
-    {
-      "path": "./docs"
-    }
-  ]
+  "include": ["src"]
 }
