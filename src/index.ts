@@ -20,3 +20,4 @@ export * from "./components/AsciiToast";
 export * from "./components/AsciiTooltip";
 export * from "./components/AsciiProgressBar";
 export * from "./components/AsciiSwitch";
+export * from "./components/AsciiCalendar";
