@@ -17,7 +17,7 @@
 | **AsciiSidebar**     | Navigation | Vertical nav menu `[ Item ]` with active state       | ⭐ Medium | ✅ Done |
 | **AsciiTabs**        | Navigation | `[ Tab1 ] [ Tab2 ] [ Tab3 ]`                         | ⭐ Medium | ✅ Done |
 | **AsciiAccordion**   | Navigation | Expandable ASCII section `> Title`                   | ⭐ Medium | ✅ Done |
-| **AsciiTable**       | Layout     | ASCII-styled grid table                              | ⭐ Medium | ⬜ Todo |
+| **AsciiTable**       | Layout     | ASCII-styled grid table                              | ⭐ Medium | ✅ Done |
 | **AsciiPagination**  | Navigation | `[ Prev ] 1 2 3 [ Next ]` pager                      | ⭐ Medium | ⬜ Todo |
 | **AsciiModal**       | Overlay    | ASCII popup box with `[ Confirm ] [ Cancel ]`        | ⭐ Medium | ⬜ Todo |
 | **AsciiToast**       | Feedback   | Floating ASCII notification `(!) Saved successfully` | ⭐ Medium | ⬜ Todo |
