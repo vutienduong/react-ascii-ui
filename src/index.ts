@@ -22,3 +22,4 @@ export * from "./components/AsciiProgressBar";
 export * from "./components/AsciiSwitch";
 export * from "./components/AsciiCalendar";
 export * from "./components/AsciiAvatar";
+export * from "./components/AsciiChart";
