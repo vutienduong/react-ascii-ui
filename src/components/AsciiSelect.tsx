@@ -7,10 +7,10 @@ export const AsciiSelect: React.FC<
     <span className="font-mono before:content-['['] after:content-[']'] relative">
       <select
         {...props}
-        className={\`
+        className={`
           font-mono bg-transparent border-none outline-none pr-4
-          appearance-none text-white \${className}
-        \`}
+          appearance-none text-white ${className}
+        `}
       >
         {children}
       </select>

@@ -6,13 +6,13 @@ export const AsciiButton: React.FC<
   return (
     <button
       {...props}
-      className={\`
+      className={`
         font-mono text-white hover:text-green-400
         before:content-['['] after:content-[']']
         px-1 cursor-pointer outline-none
         focus-visible:outline focus-visible:outline-dashed
-        \${className}
-      \`}
+        ${className}
+      `}
     >
       {children}
     </button>
