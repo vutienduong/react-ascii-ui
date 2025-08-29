@@ -12,3 +12,4 @@ export * from "./components/AsciiLoader";
 export * from "./components/AsciiNavbar";
 export * from "./components/AsciiSidebar";
 export * from "./components/AsciiTabs";
+export * from "./components/AsciiAccordion";
