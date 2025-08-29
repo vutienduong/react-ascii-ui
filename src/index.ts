@@ -15,3 +15,4 @@ export * from "./components/AsciiTabs";
 export * from "./components/AsciiAccordion";
 export * from "./components/AsciiTable";
 export * from "./components/AsciiPagination";
+export * from "./components/AsciiModal";
