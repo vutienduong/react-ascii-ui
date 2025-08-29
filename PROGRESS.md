@@ -23,7 +23,7 @@
 | **AsciiToast**       | Feedback   | Floating ASCII notification `(!) Saved successfully` | ⭐ Medium | ✅ Done |
 | **AsciiTooltip**     | Feedback   | Inline hover `^ Info`                                | ⭐ Medium | ✅ Done |
 | **AsciiProgressBar** | Feedback   | `▓▓▓░░░░ (40%)` loading bar                          | ⭐ Medium | ✅ Done |
-| **AsciiSwitch**      | Form       | `[ ON ] / [ OFF ]` toggle switch                     | ⭐ Low    | ⬜ Todo |
+| **AsciiSwitch**      | Form       | `[ ON ] / [ OFF ]` toggle switch                     | ⭐ Low    | ✅ Done |
 | **AsciiCalendar**    | Utility    | ASCII month grid (Mon–Sun + dates)                   | ⭐ Low    | ⬜ Todo |
 | **AsciiAvatar**      | Utility    | `(@MV)` user initials                                | ⭐ Low    | ⬜ Todo |
 | **AsciiChart**       | Utility    | Inline ASCII chart `▇▇▇▃▂`                           | ⭐ Low    | ⬜ Todo |
