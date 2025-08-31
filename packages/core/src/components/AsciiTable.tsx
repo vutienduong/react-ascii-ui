@@ -46,49 +46,57 @@ export const AsciiTable: React.FC<AsciiTableProps> = ({
         </div>
       )}
       
-      {/* Table Container */}
-      <div className="border border-white">
-        {/* Header Row */}
-        <div className="border-b border-white bg-white text-black flex">
-          {columns.map((column, index) => (
-            <div
-              key={column.key}
-              className={`
-                px-2 py-1 flex-1 border-r border-black last:border-r-0
-                font-bold ${getAlignClass(column.align)}
-                ${column.width || ''}
-              `}
-            >
-              {column.header}
-            </div>
-          ))}
-        </div>
-
-        {/* Data Rows */}
-        {data.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex border-b border-white last:border-b-0">
-            {columns.map((column, colIndex) => (
-              <div
-                key={`${rowIndex}-${column.key}`}
+      {/* HTML Table Structure */}
+      <table className="w-full border-collapse border border-white">
+        {/* Table Header */}
+        <thead>
+          <tr className="bg-white text-black">
+            {columns.map((column) => (
+              <th
+                key={column.key}
                 className={`
-                  px-2 py-1 flex-1 border-r border-white last:border-r-0
-                  ${getAlignClass(column.align)}
-                  ${column.width || ''}
+                  px-2 py-1 border-r border-black last:border-r-0
+                  font-bold ${getAlignClass(column.align)}
                 `}
+                style={{ width: column.width }}
               >
-                {formatCellContent(row[column.key])}
-              </div>
+                {column.header}
+              </th>
             ))}
-          </div>
-        ))}
+          </tr>
+        </thead>
 
-        {/* Empty State */}
-        {data.length === 0 && (
-          <div className="px-4 py-8 text-center text-gray-400 border-t border-white">
-            No data available
-          </div>
-        )}
-      </div>
+        {/* Table Body */}
+        <tbody>
+          {data.map((row, rowIndex) => (
+            <tr key={rowIndex} className="border-b border-white last:border-b-0">
+              {columns.map((column) => (
+                <td
+                  key={`${rowIndex}-${column.key}`}
+                  className={`
+                    px-2 py-1 border-r border-white last:border-r-0
+                    ${getAlignClass(column.align)}
+                  `}
+                >
+                  {formatCellContent(row[column.key])}
+                </td>
+              ))}
+            </tr>
+          ))}
+
+          {/* Empty State */}
+          {data.length === 0 && (
+            <tr>
+              <td 
+                colSpan={columns.length}
+                className="px-4 py-8 text-center text-gray-400 border-t border-white"
+              >
+                No data available
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </table>
     </div>
   );
 };
