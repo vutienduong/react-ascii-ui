@@ -1,5 +1,7 @@
 {
+  "version": 2,
   "buildCommand": "cd .. && npm run build:all",
   "outputDirectory": "out",
-  "installCommand": "cd .. && npm install"
+  "installCommand": "cd .. && npm install",
+  "framework": null
 }
