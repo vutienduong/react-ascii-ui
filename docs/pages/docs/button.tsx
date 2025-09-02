@@ -145,7 +145,7 @@ export default function ButtonDocs() {
           fontSize: '14px',
           lineHeight: '1.5'
         }}>
-{`import { AsciiButton } from 'react-ascii-ui';
+          {`import { AsciiButton } from 'react-ascii-ui';
 
 export default function Example() {
   return (
