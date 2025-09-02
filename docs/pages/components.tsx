@@ -1,116 +1,152 @@
+import React from 'react';
+import Link from 'next/link';
+
+const components = [
+  {
+    category: 'Forms & Input',
+    items: [
+      { name: 'Button', href: '/docs/button', description: 'Clickable button with ASCII styling' },
+      { name: 'Input', href: '/docs/input', description: 'Text input field with ASCII border' },
+      { name: 'Checkbox', href: '/docs/checkbox', description: 'Checkbox with ASCII checkmarks' },
+      { name: 'Radio', href: '/docs/radio', description: 'Radio button with selection indicators' },
+      { name: 'Select', href: '/docs/select', description: 'Dropdown with ASCII arrows' },
+      { name: 'Textarea', href: '/docs/textarea', description: 'Multi-line text input' },
+    ]
+  },
+  {
+    category: 'Layout & Structure',
+    items: [
+      { name: 'Card', href: '/docs/card', description: 'Container with title and border' },
+      { name: 'Navbar', href: '/docs/navbar', description: 'Horizontal navigation bar' },
+      { name: 'Sidebar', href: '/docs/sidebar', description: 'Collapsible side navigation' },
+      { name: 'Table', href: '/docs/table', description: 'Data table with ASCII borders' },
+      { name: 'Tabs', href: '/docs/tabs', description: 'Tabbed interface' },
+      { name: 'Accordion', href: '/docs/accordion', description: 'Expandable sections' },
+    ]
+  },
+  {
+    category: 'Feedback & Status',
+    items: [
+      { name: 'Alert', href: '/docs/alert', description: 'Status messages [INFO], [ERROR], etc.' },
+      { name: 'Badge', href: '/docs/badge', description: 'Small status indicators' },
+      { name: 'Progress', href: '/docs/progress', description: 'Progress bars with ASCII characters' },
+      { name: 'Spinner', href: '/docs/spinner', description: 'Loading indicators' },
+      { name: 'Toast', href: '/docs/toast', description: 'Temporary notification messages' },
+    ]
+  },
+  {
+    category: 'Data Display',
+    items: [
+      { name: 'Chart', href: '/docs/chart', description: 'ASCII charts and graphs' },
+      { name: 'Tree', href: '/docs/tree', description: 'Hierarchical tree view' },
+      { name: 'Pagination', href: '/docs/pagination', description: 'Page navigation controls' },
+    ]
+  },
+  {
+    category: 'Overlay & Dialog',
+    items: [
+      { name: 'Modal', href: '/docs/modal', description: 'Dialog boxes and modals' },
+      { name: 'Tooltip', href: '/docs/tooltip', description: 'Hover information display' },
+      { name: 'Popover', href: '/docs/popover', description: 'Contextual overlay content' },
+    ]
+  }
+];
+
 export default function Components() {
   return (
     <div>
-      <h1 style={{ color: '#00ff00', fontSize: '2.5em', marginBottom: '20px' }}>Components</h1>
-      <p style={{ fontSize: '1.2em', marginBottom: '30px', color: '#ccc' }}>
-        Explore all React ASCII UI components with code examples.
-      </p>
-      
-      <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '15px', marginTop: '40px' }}>Forms & Input</h2>
-      
-      <h3 style={{ color: '#fff', fontSize: '1.4em', marginBottom: '10px', marginTop: '30px' }}>AsciiButton</h3>
-      <p style={{ color: '#ccc', marginBottom: '15px' }}>The foundation of ASCII UI - a button that embraces the retro aesthetic.</p>
-      
-      <pre style={{ 
-        backgroundColor: '#111', 
-        border: '1px solid #333', 
-        padding: '15px', 
-        borderRadius: '4px', 
-        marginBottom: '20px',
-        color: '#ccc'
-      }}>
-{`<AsciiButton onClick={() => alert('Hello!')}>
-  Click Me
-</AsciiButton>`}
-      </pre>
-      
-      <h3 style={{ color: '#fff', fontSize: '1.4em', marginBottom: '10px', marginTop: '30px' }}>AsciiInput</h3>
-      <p style={{ color: '#ccc', marginBottom: '15px' }}>Text input with ASCII styling for forms.</p>
-      
-      <pre style={{ 
-        backgroundColor: '#111', 
-        border: '1px solid #333', 
-        padding: '15px', 
-        borderRadius: '4px', 
-        marginBottom: '20px',
-        color: '#ccc'
-      }}>
-{`<AsciiInput 
-  placeholder="Enter text..."
-  defaultValue="Sample text"
-/>`}
-      </pre>
+      <div style={{ marginBottom: '40px' }}>
+        <h1 style={{ color: '#00ff00', fontSize: '2.5em', marginBottom: '20px' }}>Components</h1>
+        <p style={{ fontSize: '1.2em', marginBottom: '30px', color: '#ccc' }}>
+          A comprehensive collection of ASCII-styled React components for building retro interfaces.
+        </p>
+      </div>
 
-      <h3 style={{ color: '#fff', fontSize: '1.4em', marginBottom: '10px', marginTop: '30px' }}>AsciiCheckbox</h3>
-      <p style={{ color: '#ccc', marginBottom: '15px' }}>Checkbox with ASCII checkmarks.</p>
-      
-      <pre style={{ 
-        backgroundColor: '#111', 
-        border: '1px solid #333', 
-        padding: '15px', 
-        borderRadius: '4px', 
-        marginBottom: '20px',
-        color: '#ccc'
-      }}>
-{`<AsciiCheckbox defaultChecked>
-  Accept terms
-</AsciiCheckbox>`}
-      </pre>
-      
-      <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '15px', marginTop: '40px' }}>Layout & Structure</h2>
-      
-      <h3 style={{ color: '#fff', fontSize: '1.4em', marginBottom: '10px', marginTop: '30px' }}>AsciiCard</h3>
-      <p style={{ color: '#ccc', marginBottom: '15px' }}>Container component for organizing content.</p>
-      
-      <pre style={{ 
-        backgroundColor: '#111', 
-        border: '1px solid #333', 
-        padding: '15px', 
-        borderRadius: '4px', 
-        marginBottom: '20px',
-        color: '#ccc'
-      }}>
-{`<AsciiCard title="User Profile">
-  <p>Welcome back, User!</p>
-  <AsciiButton>Edit Profile</AsciiButton>
-</AsciiCard>`}
-      </pre>
+      {components.map((category, categoryIndex) => (
+        <div key={categoryIndex} style={{ marginBottom: '50px' }}>
+          <h2 style={{ 
+            color: '#fff', 
+            fontSize: '1.8em', 
+            marginBottom: '20px',
+            borderBottom: '1px solid #333',
+            paddingBottom: '10px'
+          }}>
+            {category.category}
+          </h2>
+          
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '15px'
+          }}>
+            {category.items.map((component, index) => (
+              <Link
+                key={index}
+                href={component.href}
+                style={{
+                  display: 'block',
+                  padding: '20px',
+                  border: '1px solid #333',
+                  borderRadius: '4px',
+                  backgroundColor: '#111',
+                  textDecoration: 'none',
+                  color: '#fff',
+                  transition: 'all 0.2s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#00ff00';
+                  e.currentTarget.style.backgroundColor = '#1a1a1a';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#333';
+                  e.currentTarget.style.backgroundColor = '#111';
+                }}
+              >
+                <h3 style={{ 
+                  color: '#00ff00', 
+                  fontSize: '1.3em', 
+                  marginBottom: '8px',
+                  fontFamily: 'monospace'
+                }}>
+                  Ascii{component.name}
+                </h3>
+                <p style={{ 
+                  color: '#ccc', 
+                  fontSize: '14px', 
+                  lineHeight: '1.5',
+                  margin: 0
+                }}>
+                  {component.description}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))}
 
-      <h3 style={{ color: '#fff', fontSize: '1.4em', marginBottom: '10px', marginTop: '30px' }}>AsciiNavbar</h3>
-      <p style={{ color: '#ccc', marginBottom: '15px' }}>Horizontal navigation bar with ASCII elements.</p>
-      
-      <pre style={{ 
-        backgroundColor: '#111', 
-        border: '1px solid #333', 
-        padding: '15px', 
-        borderRadius: '4px', 
-        marginBottom: '20px',
-        color: '#ccc'
+      <div style={{
+        marginTop: '60px',
+        padding: '30px',
+        border: '1px solid #333',
+        borderRadius: '4px',
+        backgroundColor: '#111',
+        textAlign: 'center'
       }}>
-{`<AsciiNavbar>
-  <AsciiNavbar.Brand>My App</AsciiNavbar.Brand>
-  <AsciiNavbar.Item href="/">Home</AsciiNavbar.Item>
-  <AsciiNavbar.Item href="/about">About</AsciiNavbar.Item>
-</AsciiNavbar>`}
-      </pre>
-      
-      <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '15px', marginTop: '40px' }}>Component Props</h2>
-      
-      <p style={{ color: '#ccc', marginBottom: '15px' }}>
-        All components extend their respective HTML element props and accept additional styling through the className prop.
-      </p>
-
-      <h3 style={{ color: '#fff', fontSize: '1.4em', marginBottom: '10px', marginTop: '30px' }}>Common Props</h3>
-      
-      <ul style={{ listStyle: 'disc', marginLeft: '20px', lineHeight: '1.8', color: '#ccc' }}>
-        <li><code>className?: string</code> - Additional CSS classes</li>
-        <li><code>children?: React.ReactNode</code> - Child elements</li>
-        <li>All standard HTML attributes for the respective element type</li>
-      </ul>
-
-      <p style={{ color: '#ccc', marginTop: '40px' }}>
-        More component examples and full API documentation available in the library source code!
-      </p>
+        <h3 style={{ color: '#00ff00', marginBottom: '15px' }}>Installation</h3>
+        <p style={{ color: '#ccc', marginBottom: '20px' }}>
+          Install React ASCII UI to get started with all components
+        </p>
+        <pre style={{ 
+          backgroundColor: '#000', 
+          border: '1px solid #333', 
+          padding: '15px', 
+          borderRadius: '4px',
+          color: '#00ff00',
+          fontFamily: 'monospace'
+        }}>
+          npm install react-ascii-ui
+        </pre>
+      </div>
     </div>
   );
 }
