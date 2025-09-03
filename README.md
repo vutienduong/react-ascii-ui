@@ -4,6 +4,8 @@ A complete React + Tailwind component library for **ASCII-style UIs** 🎨
 
 Perfect for retro dashboards, hackathon projects, developer tools, and adding some ASCII flair to your apps!
 
+📚 **[View Documentation & Examples →](https://react-ascii-ui-docs.vercel.app)**
+
 ## Install
 
 ```bash
