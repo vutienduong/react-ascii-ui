@@ -1,0 +1,772 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><link rel="preload" href="/_next/static/css/da0a805adf25ce30.css" as="style"/><link rel="stylesheet" href="/_next/static/css/da0a805adf25ce30.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-ecc4130bc7a58a64.js" defer=""></script><script src="/_next/static/chunks/main-ca1ef957b96e9680.js" defer=""></script><script src="/_next/static/chunks/pages/_app-019366848b3a94a3.js" defer=""></script><script src="/_next/static/chunks/542-3fd1cf4a64c37546.js" defer=""></script><script src="/_next/static/chunks/62-59094c979178f918.js" defer=""></script><script src="/_next/static/chunks/pages/docs/calendar-bd286a3e99569dd2.js" defer=""></script><script src="/_next/static/OxtqNqblqVAWfwKPyfDXz/_buildManifest.js" defer=""></script><script src="/_next/static/OxtqNqblqVAWfwKPyfDXz/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div style="font-family:monospace;background-color:#000;color:#fff;min-height:100vh;padding:20px"><nav style="border-bottom:1px solid #fff;padding-bottom:20px;margin-bottom:40px"><div style="margin-bottom:15px"><a href="/" style="color:#00ff00;text-decoration:none;margin-right:20px">React ASCII UI</a><a href="/getting-started" style="color:#fff;text-decoration:none;margin-right:20px">Getting Started</a><a href="/components" style="color:#fff;text-decoration:none;margin-right:20px">Components</a><a href="/roadmap" style="color:#fff;text-decoration:none;margin-right:20px">Roadmap</a></div><div style="font-size:14px"><span style="color:#666;margin-right:15px">Demos:</span><a href="/dashboard" style="color:#00ffff;text-decoration:none;margin-right:15px">Dashboard</a><a href="/table" style="color:#00ffff;text-decoration:none;margin-right:15px">Table</a><a href="/chart" style="color:#00ffff;text-decoration:none">Chart</a></div></nav><div><div style="margin-bottom:40px"><h1 style="color:#00ff00;font-size:2.5em;margin-bottom:10px">Calendar</h1><p style="font-size:1.2em;margin-bottom:20px;color:#ccc">A retro-styled calendar component with ASCII borders and monospace typography for date selection.</p><div style="display:flex;gap:10px;align-items:center"><a href="#docs" style="color:#00ff00;text-decoration:none;font-size:14px">Docs</a><span style="color:#333">•</span><a href="#api" style="color:#00ff00;text-decoration:none;font-size:14px">API Reference</a></div></div><div style="margin-bottom:30px"><div style="display:flex;border-bottom:1px solid #333"><button style="padding:10px 20px;background-color:#111;border:none;color:#fff;border-bottom:2px solid #00ff00;font-family:monospace">Preview</button><button style="padding:10px 20px;background-color:transparent;border:none;color:#666;font-family:monospace">Code</button></div></div><div style="margin-bottom:40px;padding:40px;border:1px solid #333;border-radius:4px;background-color:#111;display:flex;justify-content:center"><div style="max-width:320px"><div class="font-mono bg-black text-white border border-white p-3 "><div class="flex items-center justify-between mb-2 pb-2 border-b border-white"><button class="hover:text-green-400 cursor-pointer">[&lt;]</button><div class="font-bold text-center flex-1">Sep<!-- --> <!-- -->2025</div><button class="hover:text-green-400 cursor-pointer">[&gt;]</button></div><div class="grid grid-cols-7 gap-0 mb-1 border-b border-white pb-1"><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Mo</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Tu</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">We</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Th</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Fr</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Sa</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Su</div></div><div class="grid grid-cols-7 gap-0"><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">01</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">02</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            bg-green-400 text-black font-bold
+            
+          ">03</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">04</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">05</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">06</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">07</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">08</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">09</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">10</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">11</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">12</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">13</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">14</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">15</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">16</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">17</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">18</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">19</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">20</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">21</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">22</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">23</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">24</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">25</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">26</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">27</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">28</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">29</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">30</button></div><div class="mt-2 pt-2 border-t border-white text-xs"><div class="flex flex-wrap gap-4"><span><span class="text-yellow-400 font-bold">●</span> Today</span><span><span class="bg-green-400 text-black px-1">●</span> Selected</span></div></div></div><div style="margin-top:15px;text-align:center;color:#ccc;font-family:monospace;font-size:14px">Selected: <!-- -->9/3/2025</div></div></div><div style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">Installation</h2><div style="margin-bottom:20px"><div style="margin-bottom:10px;display:flex;gap:10px"><button style="padding:5px 10px;background-color:#333;border:1px solid #666;color:#fff;font-size:12px;font-family:monospace">npm</button><button style="padding:5px 10px;background-color:transparent;border:1px solid #333;color:#666;font-size:12px;font-family:monospace">yarn</button><button style="padding:5px 10px;background-color:transparent;border:1px solid #333;color:#666;font-size:12px;font-family:monospace">pnpm</button></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:14px">npm install react-ascii-ui</pre></div></div><div style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">Usage</h2><pre style="background-color:#111;border:1px solid #333;padding:20px;border-radius:4px;color:#ccc;font-family:monospace;font-size:14px;line-height:1.5">import { AsciiCalendar } from &#x27;react-ascii-ui&#x27;;
+
+export default function Example() {
+  const [selectedDate, setSelectedDate] = useState&lt;Date&gt;();
+
+  return (
+    &lt;AsciiCalendar
+      selectedDate={selectedDate}
+      onDateSelect={setSelectedDate}
+    /&gt;
+  );
+}</pre></div><div style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">Examples</h2><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Basic Calendar</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono bg-black text-white border border-white p-3 "><div class="flex items-center justify-between mb-2 pb-2 border-b border-white"><button class="hover:text-green-400 cursor-pointer">[&lt;]</button><div class="font-bold text-center flex-1">Sep<!-- --> <!-- -->2025</div><button class="hover:text-green-400 cursor-pointer">[&gt;]</button></div><div class="grid grid-cols-7 gap-0 mb-1 border-b border-white pb-1"><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Mo</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Tu</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">We</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Th</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Fr</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Sa</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Su</div></div><div class="grid grid-cols-7 gap-0"><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">01</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">02</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            text-yellow-400 font-bold
+          ">03</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">04</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">05</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">06</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">07</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">08</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">09</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">10</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">11</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">12</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">13</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">14</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">15</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">16</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">17</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">18</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">19</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">20</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">21</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">22</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">23</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">24</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">25</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">26</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">27</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">28</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">29</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">30</button></div><div class="mt-2 pt-2 border-t border-white text-xs"><div class="flex flex-wrap gap-4"><span><span class="text-yellow-400 font-bold">●</span> Today</span></div></div></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiCalendar /&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">With Date Selection</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div><div class="font-mono bg-black text-white border border-white p-3 "><div class="flex items-center justify-between mb-2 pb-2 border-b border-white"><button class="hover:text-green-400 cursor-pointer">[&lt;]</button><div class="font-bold text-center flex-1">Sep<!-- --> <!-- -->2025</div><button class="hover:text-green-400 cursor-pointer">[&gt;]</button></div><div class="grid grid-cols-7 gap-0 mb-1 border-b border-white pb-1"><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Mo</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Tu</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">We</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Th</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Fr</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Sa</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Su</div></div><div class="grid grid-cols-7 gap-0"><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">01</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">02</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            text-yellow-400 font-bold
+          ">03</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">04</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">05</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">06</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">07</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">08</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">09</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">10</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">11</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">12</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">13</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">14</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">15</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">16</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">17</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">18</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">19</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">20</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">21</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">22</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">23</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">24</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">25</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">26</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">27</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">28</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">29</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">30</button></div><div class="mt-2 pt-2 border-t border-white text-xs"><div class="flex flex-wrap gap-4"><span><span class="text-yellow-400 font-bold">●</span> Today</span></div></div></div></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">const [selectedDate, setSelectedDate] = useState&lt;Date&gt;();
+
+&lt;AsciiCalendar
+  selectedDate={selectedDate}
+  onDateSelect={setSelectedDate}
+/&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Without Navigation</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono bg-black text-white border border-white p-3 "><div class="flex items-center justify-between mb-2 pb-2 border-b border-white"><div class="font-bold text-center flex-1">Sep<!-- --> <!-- -->2025</div></div><div class="grid grid-cols-7 gap-0 mb-1 border-b border-white pb-1"><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Mo</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Tu</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">We</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Th</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Fr</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Sa</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Su</div></div><div class="grid grid-cols-7 gap-0"><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">01</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">02</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            text-yellow-400 font-bold
+          ">03</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">04</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">05</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">06</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">07</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">08</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">09</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">10</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">11</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">12</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">13</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">14</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">15</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">16</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">17</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">18</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">19</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">20</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">21</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">22</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">23</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">24</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">25</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">26</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">27</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">28</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">29</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">30</button></div><div class="mt-2 pt-2 border-t border-white text-xs"><div class="flex flex-wrap gap-4"><span><span class="text-yellow-400 font-bold">●</span> Today</span></div></div></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiCalendar showNavigation={false} /&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">With Month Change Handler</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div><div class="font-mono bg-black text-white border border-white p-3 "><div class="flex items-center justify-between mb-2 pb-2 border-b border-white"><button class="hover:text-green-400 cursor-pointer">[&lt;]</button><div class="font-bold text-center flex-1">Sep<!-- --> <!-- -->2025</div><button class="hover:text-green-400 cursor-pointer">[&gt;]</button></div><div class="grid grid-cols-7 gap-0 mb-1 border-b border-white pb-1"><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Mo</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Tu</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">We</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Th</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Fr</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Sa</div><div class="w-8 h-6 flex items-center justify-center text-xs font-bold">Su</div></div><div class="grid grid-cols-7 gap-0"><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">01</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">02</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            text-yellow-400 font-bold
+          ">03</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">04</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">05</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">06</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">07</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">08</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">09</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">10</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">11</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">12</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">13</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">14</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">15</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">16</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">17</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">18</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">19</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">20</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">21</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">22</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">23</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">24</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">25</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">26</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">27</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">28</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">29</button><button class="
+            w-8 h-6 flex items-center justify-center text-sm
+            hover:bg-white hover:text-black cursor-pointer
+            text-white
+            
+          ">30</button></div><div class="mt-2 pt-2 border-t border-white text-xs"><div class="flex flex-wrap gap-4"><span><span class="text-yellow-400 font-bold">●</span> Today</span></div></div></div><div style="margin-top:10px;text-align:center;color:#ccc;font-family:monospace;font-size:12px">Viewing: <!-- -->September 2025</div></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">const [viewDate, setViewDate] = useState(new Date());
+
+&lt;AsciiCalendar
+  currentDate={viewDate}
+  onMonthChange={setViewDate}
+/&gt;</pre></div></div><div id="api" style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">API Reference</h2><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Props</h3><div style="overflow:auto"><table style="width:100%;border-collapse:collapse;border:1px solid #333;font-family:monospace;font-size:14px"><thead><tr style="background-color:#222"><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Prop</th><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Type</th><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Default</th><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Description</th></tr></thead><tbody><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">currentDate</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Date</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">new Date()</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">The initial date to display the calendar for</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">selectedDate</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Date</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">-</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Currently selected date</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">onDateSelect</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">(date: Date) =&gt; void</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">-</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Callback when a date is selected</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">showNavigation</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">boolean</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">true</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Whether to show month navigation arrows</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">onMonthChange</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">(date: Date) =&gt; void</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">-</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Callback when month changes</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">className</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">string</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">&quot;&quot;</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Additional CSS classes</td></tr></tbody></table></div><div style="margin-top:20px"><h4 style="color:#fff;font-size:1.1em;margin-bottom:10px">Features</h4><ul style="color:#ccc;list-style:disc;margin-left:20px;line-height:1.6"><li><strong>Date Selection:</strong> Click on any date to select it</li><li><strong>Month Navigation:</strong> Navigate between months with [&lt;] and [&gt;] buttons</li><li><strong>Today Highlight:</strong> Current date is highlighted in yellow</li><li><strong>Selected Highlight:</strong> Selected date is highlighted in green</li><li><strong>Week Layout:</strong> Monday to Sunday layout with proper alignment</li><li><strong>Visual Legend:</strong> Shows meaning of colors and highlighting</li><li><strong>ASCII Styling:</strong> Monospace font with retro ASCII borders</li></ul></div><p style="color:#ccc;margin-top:15px;font-size:14px">AsciiCalendar extends all HTML div attributes and supports all React div props.</p></div></div><footer style="border-top:1px solid #fff;padding-top:20px;margin-top:40px;text-align:center;color:#666"><p>Built with love for the ASCII aesthetic revolution</p><p>© 2024 React ASCII UI. MIT License.</p></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/docs/calendar","query":{},"buildId":"OxtqNqblqVAWfwKPyfDXz","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>

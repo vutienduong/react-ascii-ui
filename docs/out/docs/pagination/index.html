@@ -1,0 +1,283 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><link rel="preload" href="/_next/static/css/da0a805adf25ce30.css" as="style"/><link rel="stylesheet" href="/_next/static/css/da0a805adf25ce30.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-ecc4130bc7a58a64.js" defer=""></script><script src="/_next/static/chunks/main-ca1ef957b96e9680.js" defer=""></script><script src="/_next/static/chunks/pages/_app-019366848b3a94a3.js" defer=""></script><script src="/_next/static/chunks/542-3fd1cf4a64c37546.js" defer=""></script><script src="/_next/static/chunks/62-59094c979178f918.js" defer=""></script><script src="/_next/static/chunks/pages/docs/pagination-3ef7798c348f0b5a.js" defer=""></script><script src="/_next/static/OxtqNqblqVAWfwKPyfDXz/_buildManifest.js" defer=""></script><script src="/_next/static/OxtqNqblqVAWfwKPyfDXz/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div style="font-family:monospace;background-color:#000;color:#fff;min-height:100vh;padding:20px"><nav style="border-bottom:1px solid #fff;padding-bottom:20px;margin-bottom:40px"><div style="margin-bottom:15px"><a href="/" style="color:#00ff00;text-decoration:none;margin-right:20px">React ASCII UI</a><a href="/getting-started" style="color:#fff;text-decoration:none;margin-right:20px">Getting Started</a><a href="/components" style="color:#fff;text-decoration:none;margin-right:20px">Components</a><a href="/roadmap" style="color:#fff;text-decoration:none;margin-right:20px">Roadmap</a></div><div style="font-size:14px"><span style="color:#666;margin-right:15px">Demos:</span><a href="/dashboard" style="color:#00ffff;text-decoration:none;margin-right:15px">Dashboard</a><a href="/table" style="color:#00ffff;text-decoration:none;margin-right:15px">Table</a><a href="/chart" style="color:#00ffff;text-decoration:none">Chart</a></div></nav><div><div style="margin-bottom:40px"><h1 style="color:#00ff00;font-size:2.5em;margin-bottom:10px">Pagination</h1><p style="font-size:1.2em;margin-bottom:20px;color:#ccc">ASCII-styled pagination component with page numbers, navigation arrows, and smart ellipsis handling.</p><div style="display:flex;gap:10px;align-items:center"><a href="#docs" style="color:#00ff00;text-decoration:none;font-size:14px">Docs</a><span style="color:#333">•</span><a href="#api" style="color:#00ff00;text-decoration:none;font-size:14px">API Reference</a></div></div><div style="margin-bottom:30px"><div style="display:flex;border-bottom:1px solid #333"><button style="padding:10px 20px;background-color:#111;border:none;color:#fff;border-bottom:2px solid #00ff00;font-family:monospace">Preview</button><button style="padding:10px 20px;background-color:transparent;border:none;color:#666;font-family:monospace">Code</button></div></div><div style="margin-bottom:40px;padding:40px;border:1px solid #333;border-radius:4px;background-color:#111"><div style="display:flex;flex-direction:column;gap:30px;align-items:center"><div style="text-align:center"><h4 style="color:#fff;margin-bottom:15px">Basic Pagination</h4><div class="font-mono flex items-center gap-1 text-white "><button disabled="" class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-gray-500 cursor-not-allowed
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">1</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">2</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">5</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">10</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div><div style="margin-top:10px;color:#ccc;font-size:14px;font-family:monospace">Page <!-- -->1<!-- --> of 10</div></div><div style="text-align:center"><h4 style="color:#fff;margin-bottom:15px">Many Pages (with ellipsis)</h4><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">2</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">5</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">6</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">7</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">8</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">50</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div><div style="margin-top:10px;color:#ccc;font-size:14px;font-family:monospace">Page <!-- -->5<!-- --> of 50</div></div><div style="text-align:center"><h4 style="color:#fff;margin-bottom:15px">Few Pages (no first/last)</h4><div class="font-mono flex items-center gap-1 text-white "><button disabled="" class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-gray-500 cursor-not-allowed
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">1</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">2</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">5</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div><div style="margin-top:10px;color:#ccc;font-size:14px;font-family:monospace">Page <!-- -->1<!-- --> of 5</div></div></div></div><div style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">Installation</h2><div style="margin-bottom:20px"><div style="margin-bottom:10px;display:flex;gap:10px"><button style="padding:5px 10px;background-color:#333;border:1px solid #666;color:#fff;font-size:12px;font-family:monospace">npm</button><button style="padding:5px 10px;background-color:transparent;border:1px solid #333;color:#666;font-size:12px;font-family:monospace">yarn</button><button style="padding:5px 10px;background-color:transparent;border:1px solid #333;color:#666;font-size:12px;font-family:monospace">pnpm</button></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:14px">npm install react-ascii-ui</pre></div></div><div style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">Usage</h2><pre style="background-color:#111;border:1px solid #333;padding:20px;border-radius:4px;color:#ccc;font-family:monospace;font-size:14px;line-height:1.5">import { AsciiPagination } from &#x27;react-ascii-ui&#x27;;
+
+export default function Example() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 20;
+
+  return (
+    &lt;AsciiPagination
+      currentPage={currentPage}
+      totalPages={totalPages}
+      onPageChange={setCurrentPage}
+    /&gt;
+  );
+}</pre></div><div style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">Examples</h2><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Basic Pagination</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">2</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">5</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">10</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiPagination
+  currentPage={3}
+  totalPages={10}
+  onPageChange={handlePageChange}
+/&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Many Pages (with ellipsis)</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">13</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">14</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">15</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">16</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">17</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">100</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiPagination
+  currentPage={15}
+  totalPages={100}
+  onPageChange={handlePageChange}
+/&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Custom Visible Pages</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">7</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">8</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">9</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">25</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiPagination
+  currentPage={8}
+  totalPages={25}
+  onPageChange={handlePageChange}
+  maxVisiblePages={3}
+/&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Without First/Last Buttons</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">5</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">6</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">7</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">20</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiPagination
+  currentPage={5}
+  totalPages={20}
+  onPageChange={handlePageChange}
+  showFirstLast={false}
+/&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Few Pages (no ellipsis needed)</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;justify-content:center"><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">2</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">&lt;AsciiPagination
+  currentPage={2}
+  totalPages={4}
+  onPageChange={handlePageChange}
+/&gt;</pre></div><div style="margin-bottom:30px"><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Edge Cases</h3><div style="padding:30px;border:1px solid #333;border-radius:4px;background-color:#111;margin-bottom:15px;display:flex;flex-direction:column;gap:20px;align-items:center"><div><div style="color:#ccc;font-size:12px;margin-bottom:5px;text-align:center">First Page:</div><div class="font-mono flex items-center gap-1 text-white "><button disabled="" class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-gray-500 cursor-not-allowed
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">1</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">2</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">3</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">4</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">5</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">10</button><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Next</button></div></div><div><div style="color:#ccc;font-size:12px;margin-bottom:5px;text-align:center">Last Page:</div><div class="font-mono flex items-center gap-1 text-white "><button class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-white hover:text-green-400 cursor-pointer
+        ">Prev</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">1</button><span class="px-1 text-gray-400">...</span><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">6</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">7</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">8</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                text-white hover:text-green-400 cursor-pointer
+              ">9</button><button class="
+                px-2 py-1 min-w-[2rem] text-center
+                bg-white text-black font-bold
+              ">10</button><button disabled="" class="
+          px-2 py-1 before:content-[&#x27;[&#x27;] after:content-[&#x27;]&#x27;]
+          text-gray-500 cursor-not-allowed
+        ">Next</button></div></div></div><pre style="background-color:#000;border:1px solid #333;padding:15px;border-radius:4px;color:#00ff00;font-family:monospace;font-size:12px">// First page - Previous button disabled
+&lt;AsciiPagination currentPage={1} totalPages={10} onPageChange={...} /&gt;
+
+// Last page - Next button disabled  
+&lt;AsciiPagination currentPage={10} totalPages={10} onPageChange={...} /&gt;</pre></div></div><div id="api" style="margin-bottom:40px"><h2 style="color:#fff;font-size:1.8em;margin-bottom:20px">API Reference</h2><h3 style="color:#fff;font-size:1.3em;margin-bottom:15px">Props</h3><div style="overflow:auto"><table style="width:100%;border-collapse:collapse;border:1px solid #333;font-family:monospace;font-size:14px"><thead><tr style="background-color:#222"><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Prop</th><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Type</th><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Default</th><th style="padding:12px;text-align:left;border-bottom:1px solid #333;color:#fff;font-weight:bold">Description</th></tr></thead><tbody><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">currentPage</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">number</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">-</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Current active page number</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">totalPages</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">number</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">-</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Total number of pages</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">onPageChange</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">(page: number) =&gt; void</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">-</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Callback when page is changed</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">maxVisiblePages</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">number</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">5</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Maximum number of page buttons to show</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">showFirstLast</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">boolean</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">true</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Whether to show first and last page buttons</td></tr><tr><td style="padding:12px;border-bottom:1px solid #333;color:#00ff00">className</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">string</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">&quot;&quot;</td><td style="padding:12px;border-bottom:1px solid #333;color:#ccc">Additional CSS classes</td></tr></tbody></table></div><div style="margin-top:20px"><h4 style="color:#fff;font-size:1.1em;margin-bottom:10px">Features</h4><ul style="color:#ccc;list-style:disc;margin-left:20px;line-height:1.6"><li><strong>Smart Ellipsis:</strong> Shows &quot;...&quot; when there are too many pages</li><li><strong>Edge Handling:</strong> Always shows first and last pages when using ellipsis</li><li><strong>Navigation Arrows:</strong> [Prev] and [Next] buttons with bracket styling</li><li><strong>Active State:</strong> Current page highlighted with white background</li><li><strong>Disabled States:</strong> Previous/Next buttons disabled at edges</li><li><strong>Responsive Layout:</strong> Adapts to different page counts intelligently</li><li><strong>Click Safety:</strong> Prevents invalid page navigation</li></ul></div><div style="margin-top:20px"><h4 style="color:#fff;font-size:1.1em;margin-bottom:10px">Behavior</h4><ul style="color:#ccc;list-style:disc;margin-left:20px;line-height:1.6"><li>Pages are 1-indexed (starts from 1, not 0)</li><li>Current page is highlighted with white background and black text</li><li>Previous button is disabled when on first page</li><li>Next button is disabled when on last page</li><li>Ellipsis (...) appears when there are gaps in page numbers</li><li>Always shows first and last pages when showFirstLast is true</li></ul></div><p style="color:#ccc;margin-top:15px;font-size:14px">AsciiPagination extends all HTML div attributes and supports all React div props.</p></div></div><footer style="border-top:1px solid #fff;padding-top:20px;margin-top:40px;text-align:center;color:#666"><p>Built with love for the ASCII aesthetic revolution</p><p>© 2024 React ASCII UI. MIT License.</p></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/docs/pagination","query":{},"buildId":"OxtqNqblqVAWfwKPyfDXz","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
