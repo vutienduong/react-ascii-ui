@@ -80,6 +80,206 @@ export default function TreeDocs() {
     }
   ];
 
+  const gitRepositoryData: AsciiTreeNode[] = [
+    {
+      id: 'repo',
+      label: 'awesome-project',
+      icon: '📁',
+      children: [
+        {
+          id: 'branches',
+          label: 'Branches',
+          icon: '🌲',
+          children: [
+            { id: 'main', label: 'main ✓', icon: '🔵' },
+            { id: 'feature', label: 'feature/new-ui', icon: '🟡' },
+            { id: 'hotfix', label: 'hotfix/critical-bug', icon: '🔴' }
+          ]
+        },
+        {
+          id: 'commits',
+          label: 'Recent Commits',
+          icon: '📝',
+          children: [
+            { id: 'commit1', label: 'feat: add dark mode', icon: '✨' },
+            { id: 'commit2', label: 'fix: resolve login issue', icon: '🐛' },
+            { id: 'commit3', label: 'docs: update README', icon: '📚' }
+          ]
+        }
+      ]
+    }
+  ];
+
+  const menuNavigationData: AsciiTreeNode[] = [
+    {
+      id: 'dashboard',
+      label: 'Dashboard',
+      icon: '🏠',
+      children: [
+        { id: 'analytics', label: 'Analytics', icon: '📊' },
+        { id: 'reports', label: 'Reports', icon: '📈' },
+        { id: 'metrics', label: 'Metrics', icon: '🎯' }
+      ]
+    },
+    {
+      id: 'users',
+      label: 'Users',
+      icon: '👥',
+      children: [
+        { id: 'list', label: 'User List', icon: '👤' },
+        { id: 'roles', label: 'Roles & Permissions', icon: '🔐' },
+        { id: 'activity', label: 'Activity Log', icon: '📋' }
+      ]
+    },
+    {
+      id: 'settings',
+      label: 'Settings',
+      icon: '⚙️',
+      children: [
+        { id: 'general', label: 'General', icon: '🔧' },
+        { id: 'security', label: 'Security', icon: '🔒' },
+        { id: 'integrations', label: 'Integrations', icon: '🔗' }
+      ]
+    }
+  ];
+
+  const apiStructureData: AsciiTreeNode[] = [
+    {
+      id: 'api',
+      label: 'REST API v2.0',
+      icon: '🌐',
+      children: [
+        {
+          id: 'auth',
+          label: '/auth',
+          icon: '🔑',
+          children: [
+            { id: 'login', label: 'POST /login', icon: '🟢' },
+            { id: 'logout', label: 'POST /logout', icon: '🔴' },
+            { id: 'refresh', label: 'POST /refresh', icon: '🟡' }
+          ]
+        },
+        {
+          id: 'users',
+          label: '/users',
+          icon: '👥',
+          children: [
+            { id: 'get-users', label: 'GET /', icon: '📖' },
+            { id: 'create-user', label: 'POST /', icon: '✨' },
+            { id: 'update-user', label: 'PUT /:id', icon: '✏️' }
+          ]
+        }
+      ]
+    }
+  ];
+
+  const projectTimelineData: AsciiTreeNode[] = [
+    {
+      id: 'timeline',
+      label: 'Project Timeline',
+      icon: '📅',
+      children: [
+        {
+          id: 'q1',
+          label: 'Q1 2024',
+          icon: '🗓️',
+          children: [
+            { id: 'planning', label: 'Planning Phase', icon: '📋' },
+            { id: 'research', label: 'Research & Discovery', icon: '🔍' }
+          ]
+        },
+        {
+          id: 'q2',
+          label: 'Q2 2024',
+          icon: '🗓️',
+          children: [
+            { id: 'development', label: 'Development Sprint', icon: '💻' },
+            { id: 'testing', label: 'Testing & QA', icon: '🧪' }
+          ]
+        },
+        {
+          id: 'q3',
+          label: 'Q3 2024',
+          icon: '🗓️',
+          children: [
+            { id: 'launch', label: 'Launch Preparation', icon: '🚀' },
+            { id: 'deployment', label: 'Deployment', icon: '📦' }
+          ]
+        }
+      ]
+    }
+  ];
+
+  const databaseSchemaData: AsciiTreeNode[] = [
+    {
+      id: 'database',
+      label: 'PostgreSQL Schema',
+      icon: '🗄️',
+      children: [
+        {
+          id: 'users-table',
+          label: 'users',
+          icon: '📊',
+          children: [
+            { id: 'user-id', label: 'id (PRIMARY KEY)', icon: '🔑' },
+            { id: 'email', label: 'email (UNIQUE)', icon: '📧' },
+            { id: 'created-at', label: 'created_at', icon: '📅' }
+          ]
+        },
+        {
+          id: 'posts-table',
+          label: 'posts',
+          icon: '📊',
+          children: [
+            { id: 'post-id', label: 'id (PRIMARY KEY)', icon: '🔑' },
+            { id: 'user-fk', label: 'user_id (FOREIGN KEY)', icon: '🔗' },
+            { id: 'content', label: 'content (TEXT)', icon: '📝' }
+          ]
+        }
+      ]
+    }
+  ];
+
+  const technologyStackData: AsciiTreeNode[] = [
+    {
+      id: 'stack',
+      label: 'Tech Stack',
+      icon: '🛠️',
+      children: [
+        {
+          id: 'frontend',
+          label: 'Frontend',
+          icon: '🎨',
+          children: [
+            { id: 'react', label: 'React 18', icon: '⚛️' },
+            { id: 'typescript', label: 'TypeScript', icon: '📘' },
+            { id: 'tailwind', label: 'Tailwind CSS', icon: '🎨' }
+          ]
+        },
+        {
+          id: 'backend',
+          label: 'Backend',
+          icon: '⚙️',
+          children: [
+            { id: 'node', label: 'Node.js', icon: '🟢' },
+            { id: 'express', label: 'Express.js', icon: '🚄' },
+            { id: 'postgres', label: 'PostgreSQL', icon: '🐘' }
+          ]
+        },
+        {
+          id: 'devops',
+          label: 'DevOps',
+          icon: '🚀',
+          children: [
+            { id: 'docker', label: 'Docker', icon: '🐳' },
+            { id: 'kubernetes', label: 'Kubernetes', icon: '☸️' },
+            { id: 'aws', label: 'AWS', icon: '☁️' }
+          ]
+        }
+      ]
+    }
+  ];
+
   return (
     <div style={{ fontFamily: 'monospace', backgroundColor: '#000', color: '#fff', minHeight: '100vh', padding: '20px' }}>
       <div style={{ marginBottom: '40px' }}>
@@ -93,17 +293,47 @@ export default function TreeDocs() {
         <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Preview</h2>
         <div style={{ 
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '20px'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+          gap: '30px'
         }}>
           <div>
             <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>File System Tree</h4>
-            <AsciiTree data={fileSystemData} />
+            <AsciiTree data={fileSystemData} defaultExpanded={['src']} />
           </div>
           
           <div>
             <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Organization Chart</h4>
-            <AsciiTree data={organizationData} />
+            <AsciiTree data={organizationData} defaultExpanded={['company']} />
+          </div>
+
+          <div>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Git Repository</h4>
+            <AsciiTree data={gitRepositoryData} defaultExpanded={['repo', 'branches']} />
+          </div>
+
+          <div>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Menu Navigation</h4>
+            <AsciiTree data={menuNavigationData} />
+          </div>
+
+          <div>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>API Structure</h4>
+            <AsciiTree data={apiStructureData} defaultExpanded={['api', 'auth']} />
+          </div>
+
+          <div>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Project Timeline</h4>
+            <AsciiTree data={projectTimelineData} defaultExpanded={['timeline']} />
+          </div>
+
+          <div>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Database Schema</h4>
+            <AsciiTree data={databaseSchemaData} defaultExpanded={['database', 'users-table']} />
+          </div>
+
+          <div>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Technology Stack</h4>
+            <AsciiTree data={technologyStackData} defaultExpanded={['stack']} />
           </div>
         </div>
       </div>

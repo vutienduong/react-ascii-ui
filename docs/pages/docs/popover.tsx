@@ -17,16 +17,12 @@ export default function PopoverDocs() {
       <div style={{ marginBottom: '40px' }}>
         <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Preview</h2>
         <div style={{ 
-          border: '1px solid #333',
-          backgroundColor: '#111',
-          padding: '50px',
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          gap: '40px',
-          textAlign: 'center'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '30px'
         }}>
-          <div>
-            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Click Trigger</h4>
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Basic Click Trigger</h4>
             <AsciiPopover content="This is a click-triggered popover!" position="top">
               <button style={{
                 backgroundColor: '#333',
@@ -41,7 +37,7 @@ export default function PopoverDocs() {
             </AsciiPopover>
           </div>
 
-          <div>
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
             <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Hover Trigger</h4>
             <AsciiPopover content="This appears on hover!" position="bottom" trigger="hover">
               <button style={{
@@ -57,100 +53,12 @@ export default function PopoverDocs() {
             </AsciiPopover>
           </div>
 
-          <div>
-            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Left Position</h4>
-            <AsciiPopover content="Positioned to the left" position="left">
-              <button style={{
-                backgroundColor: '#333',
-                color: '#ff4444',
-                border: '1px solid #ff4444',
-                padding: '8px 15px',
-                fontFamily: 'monospace',
-                cursor: 'pointer'
-              }}>
-                Show Left
-              </button>
-            </AsciiPopover>
-          </div>
-
-          <div>
-            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Right Position</h4>
-            <AsciiPopover content="Positioned to the right" position="right">
-              <button style={{
-                backgroundColor: '#333',
-                color: '#00ffff',
-                border: '1px solid #00ffff',
-                padding: '8px 15px',
-                fontFamily: 'monospace',
-                cursor: 'pointer'
-              }}>
-                Show Right
-              </button>
-            </AsciiPopover>
-          </div>
-        </div>
-      </div>
-
-      <div style={{ marginBottom: '40px' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Installation</h2>
-        <pre style={{
-          backgroundColor: '#000',
-          border: '1px solid #333',
-          padding: '15px',
-          borderRadius: '4px',
-          color: '#00ff00',
-          overflow: 'auto'
-        }}>
-{`npm install react-ascii-ui`}
-        </pre>
-      </div>
-
-      <div style={{ marginBottom: '40px' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Usage</h2>
-        <pre style={{
-          backgroundColor: '#000',
-          border: '1px solid #333',
-          padding: '15px',
-          borderRadius: '4px',
-          color: '#00ff00',
-          overflow: 'auto',
-          fontSize: '14px'
-        }}>
-{`import { AsciiPopover } from 'react-ascii-ui';
-
-export default function App() {
-  const [showPopover, setShowPopover] = useState(false);
-
-  return (
-    <AsciiPopover
-      content="Helpful information here!"
-      position="top"
-      trigger="click"
-      visible={showPopover}
-      onVisibilityChange={setShowPopover}
-    >
-      <button>Show Info</button>
-    </AsciiPopover>
-  );
-}`}
-        </pre>
-      </div>
-
-      <div style={{ marginBottom: '40px' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Examples</h2>
-
-        <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ color: '#00ff00', fontSize: '1.3em', marginBottom: '15px' }}>Rich Content Popover</h3>
-          <div style={{ 
-            border: '1px solid #333',
-            backgroundColor: '#111',
-            padding: '30px',
-            textAlign: 'center'
-          }}>
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>User Profile Card</h4>
             <AsciiPopover 
               content={
                 <div>
-                  <div style={{ color: '#00ff00', marginBottom: '5px', fontWeight: 'bold' }}>User Profile</div>
+                  <div style={{ color: '#00ff00', marginBottom: '5px', fontWeight: 'bold' }}>John Doe</div>
                   <div style={{ color: '#ccc', fontSize: '12px', marginBottom: '8px' }}>john.doe@example.com</div>
                   <div style={{ borderTop: '1px solid #333', paddingTop: '8px', marginTop: '8px' }}>
                     <div style={{ fontSize: '12px', color: '#ccc' }}>Last login: 2 hours ago</div>
@@ -176,59 +84,9 @@ export default function App() {
               </div>
             </AsciiPopover>
           </div>
-        </div>
 
-        <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ color: '#00ff00', fontSize: '1.3em', marginBottom: '15px' }}>Controlled Popover</h3>
-          <div style={{ 
-            border: '1px solid #333',
-            backgroundColor: '#111',
-            padding: '30px'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <AsciiPopover
-                content="This popover is controlled externally!"
-                position="top"
-                visible={showControlled}
-                onVisibilityChange={setShowControlled}
-              >
-                <button style={{
-                  backgroundColor: '#333',
-                  color: '#fff',
-                  border: '1px solid #ccc',
-                  padding: '8px 15px',
-                  fontFamily: 'monospace',
-                  cursor: 'pointer'
-                }}>
-                  Target Element
-                </button>
-              </AsciiPopover>
-              
-              <button 
-                onClick={() => setShowControlled(!showControlled)}
-                style={{
-                  backgroundColor: showControlled ? '#ff4444' : '#00ff00',
-                  color: '#000',
-                  border: 'none',
-                  padding: '8px 15px',
-                  fontFamily: 'monospace',
-                  cursor: 'pointer'
-                }}
-              >
-                {showControlled ? 'Hide' : 'Show'} Popover
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ color: '#00ff00', fontSize: '1.3em', marginBottom: '15px' }}>Action Menu Popover</h3>
-          <div style={{ 
-            border: '1px solid #333',
-            backgroundColor: '#111',
-            padding: '30px',
-            textAlign: 'center'
-          }}>
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Action Menu</h4>
             <AsciiPopover 
               content={
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
@@ -280,6 +138,229 @@ export default function App() {
                 ⋮ Actions
               </button>
             </AsciiPopover>
+          </div>
+
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Tooltip Help</h4>
+            <AsciiPopover 
+              content="This feature allows you to manage user permissions and access controls"
+              position="top"
+              trigger="hover"
+            >
+              <span style={{
+                color: '#ccc',
+                cursor: 'help',
+                borderBottom: '1px dotted #ccc'
+              }}>
+                User Management ℹ️
+              </span>
+            </AsciiPopover>
+          </div>
+
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Notification Badge</h4>
+            <AsciiPopover 
+              content={
+                <div>
+                  <div style={{ color: '#ff4444', marginBottom: '5px', fontWeight: 'bold' }}>3 New Messages</div>
+                  <div style={{ color: '#ccc', fontSize: '12px', marginBottom: '8px' }}>• Meeting reminder at 3 PM</div>
+                  <div style={{ color: '#ccc', fontSize: '12px', marginBottom: '8px' }}>• Code review request</div>
+                  <div style={{ color: '#ccc', fontSize: '12px' }}>• System update available</div>
+                </div>
+              } 
+              position="left"
+            >
+              <div style={{
+                position: 'relative',
+                backgroundColor: '#333',
+                color: '#fff',
+                border: '1px solid #ccc',
+                padding: '8px 12px',
+                fontFamily: 'monospace',
+                cursor: 'pointer'
+              }}>
+                🔔 Notifications
+                <span style={{
+                  position: 'absolute',
+                  top: '-5px',
+                  right: '-5px',
+                  backgroundColor: '#ff4444',
+                  color: '#fff',
+                  borderRadius: '50%',
+                  width: '18px',
+                  height: '18px',
+                  fontSize: '10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  3
+                </span>
+              </div>
+            </AsciiPopover>
+          </div>
+
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Status Indicator</h4>
+            <AsciiPopover 
+              content={
+                <div>
+                  <div style={{ color: '#00ff00', marginBottom: '5px', fontWeight: 'bold' }}>System Status: Healthy</div>
+                  <div style={{ color: '#ccc', fontSize: '12px', marginBottom: '4px' }}>• CPU: 45%</div>
+                  <div style={{ color: '#ccc', fontSize: '12px', marginBottom: '4px' }}>• Memory: 62%</div>
+                  <div style={{ color: '#ccc', fontSize: '12px', marginBottom: '4px' }}>• Disk: 38%</div>
+                  <div style={{ color: '#ccc', fontSize: '12px' }}>• Uptime: 7 days</div>
+                </div>
+              } 
+              position="right"
+              trigger="hover"
+            >
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                backgroundColor: '#1a4a1a',
+                color: '#00ff00',
+                border: '1px solid #00ff00',
+                padding: '6px 12px',
+                fontFamily: 'monospace',
+                cursor: 'pointer',
+                borderRadius: '4px'
+              }}>
+                <div style={{
+                  width: '8px',
+                  height: '8px',
+                  borderRadius: '50%',
+                  backgroundColor: '#00ff00',
+                  animation: 'pulse 2s infinite'
+                }}></div>
+                Online
+              </div>
+            </AsciiPopover>
+          </div>
+
+          <div style={{ border: '1px solid #333', backgroundColor: '#111', padding: '30px', textAlign: 'center' }}>
+            <h4 style={{ color: '#00ff00', marginBottom: '15px' }}>Code Documentation</h4>
+            <AsciiPopover 
+              content={
+                <div style={{ fontFamily: 'monospace', fontSize: '11px' }}>
+                  <div style={{ color: '#00ff00', marginBottom: '8px' }}>Function: calculateTotal()</div>
+                  <div style={{ color: '#ccc', marginBottom: '8px' }}>
+                    Parameters:<br/>
+                    • items: Array&lt;Item&gt;<br/>
+                    • tax: number (optional)
+                  </div>
+                  <div style={{ color: '#ccc', fontSize: '10px' }}>
+                    Returns the total price including tax
+                  </div>
+                </div>
+              } 
+              position="top"
+              trigger="hover"
+            >
+              <code style={{
+                backgroundColor: '#2a2a2a',
+                color: '#fff',
+                padding: '4px 8px',
+                borderRadius: '3px',
+                cursor: 'help',
+                border: '1px solid #444'
+              }}>
+                calculateTotal()
+              </code>
+            </AsciiPopover>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ marginBottom: '40px' }}>
+        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Installation</h2>
+        <pre style={{
+          backgroundColor: '#000',
+          border: '1px solid #333',
+          padding: '15px',
+          borderRadius: '4px',
+          color: '#00ff00',
+          overflow: 'auto'
+        }}>
+{`npm install react-ascii-ui`}
+        </pre>
+      </div>
+
+      <div style={{ marginBottom: '40px' }}>
+        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Usage</h2>
+        <pre style={{
+          backgroundColor: '#000',
+          border: '1px solid #333',
+          padding: '15px',
+          borderRadius: '4px',
+          color: '#00ff00',
+          overflow: 'auto',
+          fontSize: '14px'
+        }}>
+{`import { AsciiPopover } from 'react-ascii-ui';
+
+export default function App() {
+  const [showPopover, setShowPopover] = useState(false);
+
+  return (
+    <AsciiPopover
+      content="Helpful information here!"
+      position="top"
+      trigger="click"
+      visible={showPopover}
+      onVisibilityChange={setShowPopover}
+    >
+      <button>Show Info</button>
+    </AsciiPopover>
+  );
+}`}
+        </pre>
+      </div>
+
+      <div style={{ marginBottom: '40px' }}>
+        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Advanced Examples</h2>
+
+        <div style={{ marginBottom: '30px' }}>
+          <h3 style={{ color: '#00ff00', fontSize: '1.3em', marginBottom: '15px' }}>Controlled Popover</h3>
+          <div style={{ 
+            border: '1px solid #333',
+            backgroundColor: '#111',
+            padding: '30px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+              <AsciiPopover
+                content="This popover is controlled externally!"
+                position="top"
+                visible={showControlled}
+                onVisibilityChange={setShowControlled}
+              >
+                <button style={{
+                  backgroundColor: '#333',
+                  color: '#fff',
+                  border: '1px solid #ccc',
+                  padding: '8px 15px',
+                  fontFamily: 'monospace',
+                  cursor: 'pointer'
+                }}>
+                  Target Element
+                </button>
+              </AsciiPopover>
+              
+              <button 
+                onClick={() => setShowControlled(!showControlled)}
+                style={{
+                  backgroundColor: showControlled ? '#ff4444' : '#00ff00',
+                  color: '#000',
+                  border: 'none',
+                  padding: '8px 15px',
+                  fontFamily: 'monospace',
+                  cursor: 'pointer'
+                }}
+              >
+                {showControlled ? 'Hide' : 'Show'} Popover
+              </button>
+            </div>
           </div>
         </div>
       </div>
