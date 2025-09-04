@@ -23,3 +23,5 @@ export * from "./components/AsciiSwitch";
 export * from "./components/AsciiCalendar";
 export * from "./components/AsciiAvatar";
 export * from "./components/AsciiChart";
+export * from "./components/AsciiTree";
+export * from "./components/AsciiPopover";

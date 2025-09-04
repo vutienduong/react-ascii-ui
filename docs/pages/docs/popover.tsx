@@ -1,117 +1,5 @@
 import React, { useState } from 'react';
-
-// Placeholder Popover component for demonstration
-interface AsciiPopoverProps {
-  children: React.ReactNode;
-  content: string | React.ReactNode;
-  position?: 'top' | 'bottom' | 'left' | 'right';
-  trigger?: 'click' | 'hover';
-  visible?: boolean;
-  onVisibilityChange?: (visible: boolean) => void;
-}
-
-const AsciiPopover: React.FC<AsciiPopoverProps> = ({ children, content, position = 'top', trigger = 'click', visible, onVisibilityChange }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [internalVisible, setInternalVisible] = useState(visible || false);
-
-  const actualVisible = visible !== undefined ? visible : internalVisible;
-
-  const handleTrigger = (e: React.MouseEvent) => {
-    if (trigger === 'click') {
-      e.stopPropagation();
-      const newVisible = !actualVisible;
-      setInternalVisible(newVisible);
-      onVisibilityChange?.(newVisible);
-    }
-  };
-
-  const handleMouseEnter = () => {
-    if (trigger === 'hover') {
-      setInternalVisible(true);
-      onVisibilityChange?.(true);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (trigger === 'hover') {
-      setInternalVisible(false);
-      onVisibilityChange?.(false);
-    }
-  };
-
-  const getPositionStyles = () => {
-    const base = {
-      position: 'absolute' as const,
-      backgroundColor: '#111',
-      border: '1px solid #333',
-      borderRadius: '4px',
-      padding: '10px',
-      color: '#fff',
-      fontSize: '14px',
-      zIndex: 1000,
-      minWidth: '150px',
-      maxWidth: '250px'
-    };
-
-    switch (position) {
-      case 'top':
-        return { ...base, bottom: '100%', left: '50%', transform: 'translateX(-50%)', marginBottom: '5px' };
-      case 'bottom':
-        return { ...base, top: '100%', left: '50%', transform: 'translateX(-50%)', marginTop: '5px' };
-      case 'left':
-        return { ...base, right: '100%', top: '50%', transform: 'translateY(-50%)', marginRight: '5px' };
-      case 'right':
-        return { ...base, left: '100%', top: '50%', transform: 'translateY(-50%)', marginLeft: '5px' };
-      default:
-        return base;
-    }
-  };
-
-  return (
-    <div 
-      style={{ position: 'relative', display: 'inline-block' }}
-      onClick={handleTrigger}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {children}
-      {actualVisible && (
-        <div style={getPositionStyles()}>
-          {content}
-          <div style={{
-            position: 'absolute',
-            content: '""',
-            border: '5px solid transparent',
-            ...(position === 'top' && {
-              top: '100%',
-              left: '50%',
-              marginLeft: '-5px',
-              borderTopColor: '#333'
-            }),
-            ...(position === 'bottom' && {
-              bottom: '100%',
-              left: '50%',
-              marginLeft: '-5px',
-              borderBottomColor: '#333'
-            }),
-            ...(position === 'left' && {
-              left: '100%',
-              top: '50%',
-              marginTop: '-5px',
-              borderLeftColor: '#333'
-            }),
-            ...(position === 'right' && {
-              right: '100%',
-              top: '50%',
-              marginTop: '-5px',
-              borderRightColor: '#333'
-            })
-          }} />
-        </div>
-      )}
-    </div>
-  );
-};
+import { AsciiPopover } from 'react-ascii-ui';
 
 export default function PopoverDocs() {
   const [showControlled, setShowControlled] = useState(false);
@@ -124,18 +12,6 @@ export default function PopoverDocs() {
           Contextual overlay components with ASCII styling for displaying additional information and actions.
         </p>
         
-        <div style={{ 
-          backgroundColor: '#ffaa00', 
-          color: '#000', 
-          padding: '15px', 
-          borderRadius: '4px',
-          marginBottom: '20px',
-          border: '1px solid #ffaa00'
-        }}>
-          <strong>⚠️ Development Status:</strong> The AsciiPopover component is planned for a future release. 
-          This documentation shows the intended API and features. Below is a preview implementation 
-          demonstrating the expected functionality.
-        </div>
       </div>
 
       <div style={{ marginBottom: '40px' }}>
@@ -230,7 +106,7 @@ export default function PopoverDocs() {
       </div>
 
       <div style={{ marginBottom: '40px' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Planned Usage</h2>
+        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Usage</h2>
         <pre style={{
           backgroundColor: '#000',
           border: '1px solid #333',
@@ -409,7 +285,7 @@ export default function App() {
       </div>
 
       <div style={{ marginBottom: '40px' }}>
-        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>Planned API Reference</h2>
+        <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '20px' }}>API Reference</h2>
         <div style={{ backgroundColor: '#111', border: '1px solid #333', borderRadius: '4px', padding: '20px' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', color: '#fff' }}>
             <thead>
@@ -451,11 +327,35 @@ export default function App() {
                 <td style={{ padding: '8px', color: '#ccc' }}>undefined</td>
                 <td style={{ padding: '8px', color: '#ccc' }}>Controlled visibility</td>
               </tr>
-              <tr>
+              <tr style={{ borderBottom: '1px solid #333' }}>
                 <td style={{ padding: '8px', fontFamily: 'monospace' }}>onVisibilityChange</td>
                 <td style={{ padding: '8px', color: '#ccc' }}>{'(visible: boolean) => void'}</td>
                 <td style={{ padding: '8px', color: '#ccc' }}>undefined</td>
                 <td style={{ padding: '8px', color: '#ccc' }}>Visibility change callback</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid #333' }}>
+                <td style={{ padding: '8px', fontFamily: 'monospace' }}>delay</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>number</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>0</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>Show/hide delay in milliseconds</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid #333' }}>
+                <td style={{ padding: '8px', fontFamily: 'monospace' }}>offset</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>number</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>8</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>Distance from trigger element</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid #333' }}>
+                <td style={{ padding: '8px', fontFamily: 'monospace' }}>arrow</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>boolean</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>true</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>Show arrow pointer</td>
+              </tr>
+              <tr>
+                <td style={{ padding: '8px', fontFamily: 'monospace' }}>className</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>string</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>""</td>
+                <td style={{ padding: '8px', color: '#ccc' }}>Additional CSS classes</td>
               </tr>
             </tbody>
           </table>
@@ -471,26 +371,19 @@ type Trigger = 'click' | 'hover';`}
       </div>
 
       <div style={{ marginTop: '40px', padding: '20px', border: '1px solid #333', borderRadius: '4px', backgroundColor: '#111' }}>
-        <h3 style={{ color: '#00ff00', marginBottom: '10px' }}>Planned Popover Features</h3>
+        <h3 style={{ color: '#00ff00', marginBottom: '10px' }}>Popover Features</h3>
         <ul style={{ color: '#ccc', fontSize: '14px', listStyle: 'disc', marginLeft: '20px', lineHeight: '1.6' }}>
-          <li>Multiple positioning options (top, bottom, left, right)</li>
-          <li>Click and hover trigger modes</li>
-          <li>Controlled and uncontrolled usage patterns</li>
-          <li>Rich content support (text, HTML, React components)</li>
-          <li>Auto-positioning to avoid viewport edges</li>
-          <li>Customizable styling and animations</li>
-          <li>Keyboard navigation and accessibility support</li>
-          <li>Portal rendering for z-index management</li>
-          <li>Click outside to close functionality</li>
+          <li>✅ Multiple positioning options (top, bottom, left, right)</li>
+          <li>✅ Click and hover trigger modes</li>
+          <li>✅ Controlled and uncontrolled usage patterns</li>
+          <li>✅ Rich content support (text, HTML, React components)</li>
+          <li>✅ Auto-positioning to avoid viewport edges</li>
+          <li>✅ Customizable styling and arrow indicators</li>
+          <li>✅ Configurable delays and offsets</li>
+          <li>✅ Click outside to close functionality</li>
+          <li>🔄 Keyboard navigation and accessibility support (coming soon)</li>
+          <li>🔄 Portal rendering for z-index management (coming soon)</li>
         </ul>
-        
-        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#0a0a0a', border: '1px solid #333', borderRadius: '2px' }}>
-          <strong style={{ color: '#00ffff' }}>Development Timeline:</strong>
-          <p style={{ color: '#ccc', margin: '5px 0 0 0', fontSize: '12px' }}>
-            The AsciiPopover component is planned for implementation in v1.1.0. 
-            It will provide contextual overlays for tooltips, menus, and informational content.
-          </p>
-        </div>
       </div>
     </div>
   );
