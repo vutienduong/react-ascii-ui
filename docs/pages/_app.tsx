@@ -14,6 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
         <div style={{ fontSize: '14px' }}>
           <span style={{ color: '#666', marginRight: '15px' }}>Demos:</span>
           <a href="/dashboard" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Dashboard</a>
+          <a href="/terminal" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Terminal</a>
+          <a href="/ide" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>IDE</a>
+          <a href="/music-player" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Music Player</a>
+          <a href="/chat" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Chat</a>
+          <a href="/email" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Email</a>
+          <a href="/file-manager" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>File Manager</a>
+          <a href="/monitoring" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Monitoring</a>
           <a href="/table" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Table</a>
           <a href="/chart" style={{ color: '#00ffff', textDecoration: 'none' }}>Chart</a>
         </div>

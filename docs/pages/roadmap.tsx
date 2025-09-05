@@ -10,7 +10,7 @@ export default function Roadmap() {
       <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '15px', marginTop: '40px' }}>Current Status: All Tiers Complete!</h2>
       
       <p style={{ marginBottom: '30px', color: '#ccc', lineHeight: '1.6' }}>
-        We have successfully implemented all 29 planned components across 4 development tiers. 
+        We have successfully implemented all 31 components across 4 development tiers, including the recently added AsciiTree and AsciiPopover components. 
         The library is now feature-complete and ready for production use!
       </p>
 
@@ -49,10 +49,30 @@ export default function Roadmap() {
         All remaining components including dialogs, overlays, utilities, and advanced features have been implemented.
       </p>
 
+      <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '15px', marginTop: '40px' }}>Interactive Demo Applications</h2>
+      
+      <p style={{ marginBottom: '15px', color: '#ccc' }}>
+        Complete applications showcasing real-world usage of ASCII UI components:
+      </p>
+      
+      <ul style={{ listStyle: 'disc', marginLeft: '20px', lineHeight: '1.8', color: '#ccc', marginBottom: '30px' }}>
+        <li>✅ <strong>Dashboard</strong> - Admin panel with metrics, charts, and tables</li>
+        <li>✅ <strong>Terminal Interface</strong> - Interactive command-line simulation</li>
+        <li>✅ <strong>IDE/Code Editor</strong> - Full development environment with file explorer</li>
+        <li>✅ <strong>Music Player</strong> - Complete audio player with playlists and controls</li>
+        <li>✅ <strong>Chat Application</strong> - Real-time messaging with channels and users</li>
+        <li>✅ <strong>Email Client</strong> - Three-pane email interface with composition</li>
+        <li>✅ <strong>File Manager</strong> - Directory browser with tree navigation</li>
+        <li>✅ <strong>System Monitoring</strong> - Infrastructure dashboard with live metrics</li>
+        <li>✅ <strong>Data Table</strong> - Interactive data grid with sorting and filtering</li>
+        <li>✅ <strong>Chart Gallery</strong> - Various chart types and data visualization</li>
+      </ul>
+
       <h2 style={{ color: '#fff', fontSize: '1.8em', marginBottom: '15px', marginTop: '40px' }}>Development Metrics</h2>
       
       <ul style={{ listStyle: 'disc', marginLeft: '20px', lineHeight: '1.8', color: '#ccc', marginBottom: '30px' }}>
-        <li><strong>Total Components</strong>: 29/29 (100%)</li>
+        <li><strong>Total Components</strong>: 31/31 (100%)</li>
+        <li><strong>Demo Applications</strong>: 10/10 (100%)</li>
         <li><strong>TypeScript Coverage</strong>: 100%</li>
         <li><strong>Tree Shaking</strong>: Supported</li>
         <li><strong>Bundle Size</strong>: Optimized for minimal footprint</li>

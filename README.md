@@ -51,9 +51,22 @@ export default function Demo() {
 }
 ```
 
+## 🎮 Live Demo Applications
+
+See the full potential with **10 interactive demo apps**:
+
+- **[Dashboard](https://react-ascii-ui-docs.vercel.app/dashboard)** - Admin panel with metrics and analytics
+- **[Terminal](https://react-ascii-ui-docs.vercel.app/terminal)** - Interactive command-line interface
+- **[IDE](https://react-ascii-ui-docs.vercel.app/ide)** - Full development environment with file explorer
+- **[Music Player](https://react-ascii-ui-docs.vercel.app/music-player)** - Complete audio player with playlists
+- **[Chat App](https://react-ascii-ui-docs.vercel.app/chat)** - Real-time messaging with channels
+- **[Email Client](https://react-ascii-ui-docs.vercel.app/email)** - Three-pane email interface
+- **[File Manager](https://react-ascii-ui-docs.vercel.app/file-manager)** - Directory browser with navigation
+- **[Monitoring](https://react-ascii-ui-docs.vercel.app/monitoring)** - System dashboard with live metrics
+
 ## 📦 Complete Component Library
 
-**29 components** across 4 tiers - everything you need for ASCII UIs:
+**31 components** across 4 tiers - everything you need for ASCII UIs:
 
 ### 🔧 Forms & Inputs
 - `AsciiButton` - `[ Click Me ]` clickable buttons
@@ -87,6 +100,8 @@ export default function Demo() {
 - `AsciiCalendar` - Month grids for date selection
 - `AsciiAvatar` - `(@UV)` user initials
 - `AsciiChart` - `▇▇▇▃▂` data visualization
+- `AsciiTree` - Hierarchical data with `[+]` expansion
+- `AsciiPopover` - Contextual overlays with smart positioning
 
 ## 🎯 Features
 
