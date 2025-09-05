@@ -146,7 +146,7 @@ export default function MonitoringDemo() {
         <div style={{ marginTop: '15px' }}>
           <AsciiBadge color="success">System Online</AsciiBadge>
           <span style={{ margin: '0 10px' }}>•</span>
-          <AsciiBadge color="info">Last Updated: {new Date().toLocaleTimeString()}</AsciiBadge>
+          <AsciiBadge color="primary">Last Updated: {new Date().toLocaleTimeString()}</AsciiBadge>
         </div>
       </div>
 

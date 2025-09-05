@@ -249,7 +249,7 @@ export default function ChatDemo() {
           }}>
             <h2 style={{ color: '#00ff00', margin: 0, display: 'flex', alignItems: 'center', gap: '10px' }}>
               {selectedChannel}
-              <AsciiBadge color="info">{messages.length} messages</AsciiBadge>
+              <AsciiBadge color="primary">{messages.length} messages</AsciiBadge>
             </h2>
             <p style={{ color: '#ccc', margin: '5px 0 0 0', fontSize: '14px' }}>
               Welcome to {selectedChannel}! Start chatting below.

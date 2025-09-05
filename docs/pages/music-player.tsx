@@ -160,7 +160,7 @@ export default function MusicPlayerDemo() {
                   {currentSong.album}
                 </div>
                 <div style={{ position: 'absolute', top: '10px', right: '10px' }}>
-                  <AsciiBadge color="info">{currentSong.genre}</AsciiBadge>
+                  <AsciiBadge color="primary">{currentSong.genre}</AsciiBadge>
                 </div>
                 {isPlaying && (
                   <div style={{ 
@@ -313,7 +313,7 @@ export default function MusicPlayerDemo() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <span style={{ color: '#ccc' }}>Total Tracks:</span>
-                <AsciiBadge color="info">{playlist.length}</AsciiBadge>
+                <AsciiBadge color="primary">{playlist.length}</AsciiBadge>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <span style={{ color: '#ccc' }}>Total Duration:</span>

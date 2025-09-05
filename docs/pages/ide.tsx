@@ -196,7 +196,7 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
               <h4 style={{ color: '#00ff00', margin: 0 }}>{selectedFile}</h4>
               <div style={{ display: 'flex', gap: '10px' }}>
                 <AsciiBadge color="default">TypeScript</AsciiBadge>
-                <AsciiBadge color="info">UTF-8</AsciiBadge>
+                <AsciiBadge color="primary">UTF-8</AsciiBadge>
               </div>
             </div>
             
@@ -244,7 +244,7 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
                     <AsciiBadge color={
                       problem.type === 'error' ? 'error' : 
-                      problem.type === 'warning' ? 'warning' : 'info'
+                      problem.type === 'warning' ? 'warning' : 'primary'
                     }>
                       {problem.type.toUpperCase()}
                     </AsciiBadge>
@@ -261,7 +261,7 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
             {isDebugging ? (
               <div style={{ maxHeight: '200px', overflow: 'auto' }}>
                 <div style={{ marginBottom: '8px', color: '#00ff00' }}>
-                  > Starting debug session...
+                  {'>'} Starting debug session...
                 </div>
                 <div style={{ marginBottom: '8px', color: '#ccc' }}>
                   Breakpoint set at App.tsx:15
@@ -270,7 +270,7 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
                   Warning: Unhandled promise rejection
                 </div>
                 <div style={{ marginBottom: '8px', color: '#00ff00' }}>
-                  > Variables: user = undefined
+                  {'>'} Variables: user = undefined
                 </div>
               </div>
             ) : (

@@ -262,7 +262,7 @@ export default function EmailDemo() {
                 </span>
               </div>
               {folder.count > 0 && (
-                <AsciiBadge color="info">{folder.count}</AsciiBadge>
+                <AsciiBadge color="primary">{folder.count}</AsciiBadge>
               )}
             </div>
           ))}
@@ -384,7 +384,7 @@ export default function EmailDemo() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '5px' }}>
                       <span style={{ fontSize: '1.5em' }}>{selectedEmail.avatar}</span>
                       <span style={{ color: '#fff' }}>{selectedEmail.from}</span>
-                      <AsciiBadge color="info">{selectedEmail.timestamp}</AsciiBadge>
+                      <AsciiBadge color="primary">{selectedEmail.timestamp}</AsciiBadge>
                     </div>
                   </div>
                   <div style={{ display: 'flex', gap: '10px' }}>
@@ -397,7 +397,7 @@ export default function EmailDemo() {
                 <div style={{ display: 'flex', gap: '10px' }}>
                   {selectedEmail.important && <AsciiBadge color="error">Important</AsciiBadge>}
                   {selectedEmail.starred && <AsciiBadge color="warning">Starred</AsciiBadge>}
-                  {!selectedEmail.read && <AsciiBadge color="info">Unread</AsciiBadge>}
+                  {!selectedEmail.read && <AsciiBadge color="primary">Unread</AsciiBadge>}
                 </div>
               </div>
               

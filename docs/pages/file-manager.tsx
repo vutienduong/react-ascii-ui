@@ -351,7 +351,6 @@ export default function FileManagerDemo() {
               <AsciiTable
                 data={tableData}
                 columns={tableColumns}
-                onRowClick={(index) => toggleFileSelection(filteredFiles[index].id)}
               />
             ) : (
               <div style={{ 
