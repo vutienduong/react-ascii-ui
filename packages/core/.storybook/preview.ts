@@ -1,6 +1,5 @@
 import type { Preview } from '@storybook/react-vite';
 import { AsciiThemeProvider } from '../src/contexts/ThemeContext';
-import { getThemeNames } from '../src/themes';
 import React from 'react';
 
 // Custom decorator to wrap all stories with theme provider
@@ -22,17 +21,6 @@ const withThemeProvider = (Story, context) => {
 
 const preview: Preview = {
   parameters: {
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
-    },
-    docs: {
-      description: {
-        component: 'ASCII UI components with terminal aesthetics'
-      }
-    },
     backgrounds: {
       default: 'dark',
       values: [
@@ -49,10 +37,15 @@ const preview: Preview = {
       defaultValue: 'classic',
       toolbar: {
         icon: 'paintbrush',
-        items: getThemeNames().map(theme => ({
-          value: theme,
-          title: theme.charAt(0).toUpperCase() + theme.slice(1)
-        })),
+        items: [
+          { value: 'classic', title: 'Classic' },
+          { value: 'cyberpunk', title: 'Cyberpunk' },
+          { value: 'matrix', title: 'Matrix' },
+          { value: 'retro', title: 'Retro' },
+          { value: 'neon', title: 'Neon' },
+          { value: 'terminal', title: 'Terminal' },
+          { value: 'minimal', title: 'Minimal' }
+        ],
         dynamicTitle: true
       }
     }
