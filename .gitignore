@@ -6,3 +6,6 @@ package-lock.json
 docs/.next
 docs/.next
 docs/out
+
+*storybook.log
+storybook-static
