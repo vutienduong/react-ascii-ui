@@ -30,3 +30,6 @@ export * from "./components/AsciiThemeSwitcher";
 // Theme system exports
 export * from "./themes";
 export * from "./contexts/ThemeContext";
+
+// Animation system exports
+export * from "./animations";

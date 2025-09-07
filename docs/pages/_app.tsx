@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <a href="/getting-started" style={{ color: '#fff', textDecoration: 'none', marginRight: '20px' }}>Getting Started</a>
           <a href="/components" style={{ color: '#fff', textDecoration: 'none', marginRight: '20px' }}>Components</a>
           <a href="/themes" style={{ color: '#fff', textDecoration: 'none', marginRight: '20px' }}>Themes</a>
+          <a href="/animations" style={{ color: '#fff', textDecoration: 'none', marginRight: '20px' }}>Animations</a>
           <a href="/roadmap" style={{ color: '#fff', textDecoration: 'none', marginRight: '20px' }}>Roadmap</a>
         </div>
         <div style={{ fontSize: '14px' }}>
