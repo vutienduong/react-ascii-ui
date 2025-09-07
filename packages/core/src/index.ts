@@ -27,6 +27,8 @@ export * from "./components/AsciiChart";
 export * from "./components/AsciiTree";
 export * from "./components/AsciiPopover";
 export * from "./components/AsciiThemeSwitcher";
+export * from "./components/AsciiFileUpload";
+export * from "./components/AsciiTerminal";
 
 // Theme system exports
 export * from "./themes";
@@ -40,3 +42,6 @@ export * from "./components/data-visualization";
 
 // Form system exports
 export * from "./components/forms";
+
+// Layout system exports
+export * from "./components/layout";
