@@ -14,6 +14,7 @@ export * from "./components/AsciiSidebar";
 export * from "./components/AsciiTabs";
 export * from "./components/AsciiAccordion";
 export * from "./components/AsciiTable";
+export * from "./components/AsciiAdvancedTable";
 export * from "./components/AsciiPagination";
 export * from "./components/AsciiModal";
 export * from "./components/AsciiToast";
@@ -33,3 +34,9 @@ export * from "./contexts/ThemeContext";
 
 // Animation system exports
 export * from "./animations";
+
+// Data visualization exports
+export * from "./components/data-visualization";
+
+// Form system exports
+export * from "./components/forms";
