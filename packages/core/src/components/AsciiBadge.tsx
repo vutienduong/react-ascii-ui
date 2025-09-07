@@ -1,4 +1,5 @@
 import React from "react";
+import { useAsciiTheme } from '../contexts/ThemeContext';
 
 interface AsciiBadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: 'square' | 'curly';
@@ -12,35 +13,42 @@ export const AsciiBadge: React.FC<AsciiBadgeProps> = ({
   className = "", 
   ...props 
 }) => {
+  const { theme } = useAsciiTheme();
+
   const getBrackets = (variant: string) => {
     switch (variant) {
       case 'curly': return { left: '{', right: '}' };
       case 'square':
-      default: return { left: '[', right: ']' };
+      default: return { left: theme.characters.bracketLeft, right: theme.characters.bracketRight };
     }
   };
 
-  const getColorClass = (color: string) => {
+  const getThemeColor = (color: string) => {
     switch (color) {
-      case 'primary': return 'text-blue-400';
-      case 'success': return 'text-green-400';
-      case 'warning': return 'text-yellow-400';
-      case 'error': return 'text-red-400';
+      case 'primary': return theme.colors.primary;
+      case 'success': return theme.colors.success;
+      case 'warning': return theme.colors.warning;
+      case 'error': return theme.colors.error;
       case 'default':
-      default: return 'text-white';
+      default: return theme.colors.text;
     }
   };
 
   const brackets = getBrackets(variant);
+  const themeColor = getThemeColor(color);
 
   return (
     <span
       {...props}
       className={`
         font-mono text-xs font-bold inline-flex items-center
-        ${getColorClass(color)}
         ${className}
       `}
+      style={{
+        color: themeColor,
+        fontFamily: theme.typography.fontFamily,
+        ...props.style
+      }}
     >
       <span className="select-none">{brackets.left}</span>
       <span className="px-1">{children}</span>

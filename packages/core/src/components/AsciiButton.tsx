@@ -1,20 +1,27 @@
 import React from "react";
+import { useAsciiTheme } from '../contexts/ThemeContext';
 
 export const AsciiButton: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement>
 > = ({ children, className = "", ...props }) => {
+  const { theme } = useAsciiTheme();
+  
   return (
     <button
       {...props}
       className={`
-        font-mono text-white hover:text-green-400
-        before:content-['['] after:content-[']']
-        px-1 cursor-pointer outline-none
-        focus-visible:outline focus-visible:outline-dashed
+        font-mono px-1 cursor-pointer outline-none
+        focus-visible:outline focus-visible:outline-dashed hover:opacity-80 transition-opacity
         ${className}
       `}
+      style={{
+        color: theme.colors.text,
+        fontFamily: theme.typography.fontFamily,
+        borderColor: theme.colors.border,
+        ...props.style
+      }}
     >
-      {children}
+      {theme.characters.bracketLeft}{children}{theme.characters.bracketRight}
     </button>
   );
 };

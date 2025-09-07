@@ -25,3 +25,8 @@ export * from "./components/AsciiAvatar";
 export * from "./components/AsciiChart";
 export * from "./components/AsciiTree";
 export * from "./components/AsciiPopover";
+export * from "./components/AsciiThemeSwitcher";
+
+// Theme system exports
+export * from "./themes";
+export * from "./contexts/ThemeContext";
