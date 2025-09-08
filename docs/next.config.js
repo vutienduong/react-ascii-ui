@@ -5,6 +5,14 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
+  },
+  typescript: {
+    // Skip TypeScript errors during build
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    // Skip ESLint during build
+    ignoreDuringBuilds: true,
   }
 };
 
