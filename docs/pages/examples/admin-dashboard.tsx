@@ -32,7 +32,7 @@ export default function AdminDashboard() {
       header: 'Status', 
       width: '15%', 
       sortable: true,
-      render: (value) => (
+      render: (value: string) => (
         <span style={{ color: value === 'Active' ? '#00ff00' : '#ff6666' }}>
           {value === 'Active' ? '🟢' : '🔴'} {value}
         </span>
@@ -373,14 +373,14 @@ export default function AdminDashboard() {
               }}
               onMouseEnter={(e) => {
                 if (currentView !== item.id) {
-                  e.target.style.backgroundColor = '#222';
-                  e.target.style.color = '#fff';
+                  (e.target as HTMLElement).style.backgroundColor = '#222';
+                  (e.target as HTMLElement).style.color = '#fff';
                 }
               }}
               onMouseLeave={(e) => {
                 if (currentView !== item.id) {
-                  e.target.style.backgroundColor = 'transparent';
-                  e.target.style.color = '#ccc';
+                  (e.target as HTMLElement).style.backgroundColor = 'transparent';
+                  (e.target as HTMLElement).style.color = '#ccc';
                 }
               }}
             >
