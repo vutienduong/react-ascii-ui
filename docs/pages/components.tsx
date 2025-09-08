@@ -49,6 +49,16 @@ const components = [
       { name: 'Tooltip', href: '/docs/tooltip', description: 'Hover information display' },
       { name: 'Popover', href: '/docs/popover', description: 'Contextual overlay content' },
     ]
+  },
+  {
+    category: '🌟 Advanced Features',
+    items: [
+      { name: 'Sound System', href: '/docs/sound-system', description: '🔊 Web Audio API with 20+ retro sound effects and custom hooks' },
+      { name: 'ASCII Art Generator', href: '/docs/ascii-art', description: '🎨 Real-time image-to-ASCII conversion with webcam support' },
+      { name: 'Code Editor', href: '/docs/code-editor', description: '💻 Multi-language syntax highlighting with 4 retro themes' },
+      { name: 'Network Visualizer', href: '/docs/network-visualizer', description: '🔗 Interactive topology diagrams with 5 layout algorithms' },
+      { name: 'Gaming Components', href: '/docs/gaming', description: '🎮 Foundation systems for ASCII game interfaces' },
+    ]
   }
 ];
 

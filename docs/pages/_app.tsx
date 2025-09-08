@@ -24,7 +24,11 @@ export default function App({ Component, pageProps }: AppProps) {
           <a href="/file-manager" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>File Manager</a>
           <a href="/monitoring" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Monitoring</a>
           <a href="/table" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Table</a>
-          <a href="/chart" style={{ color: '#00ffff', textDecoration: 'none' }}>Chart</a>
+          <a href="/chart" style={{ color: '#00ffff', textDecoration: 'none', marginRight: '15px' }}>Chart</a>
+          <a href="/sound-demo" style={{ color: '#ffaa00', textDecoration: 'none', marginRight: '15px' }}>🔊 Sound Demo</a>
+          <a href="/ascii-art-studio" style={{ color: '#ffaa00', textDecoration: 'none', marginRight: '15px' }}>🎨 ASCII Art Studio</a>
+          <a href="/code-editor-ide" style={{ color: '#ffaa00', textDecoration: 'none', marginRight: '15px' }}>💻 Code Editor IDE</a>
+          <a href="/network-monitor" style={{ color: '#ffaa00', textDecoration: 'none' }}>🔗 Network Monitor</a>
         </div>
       </nav>
       <Component {...pageProps} />
