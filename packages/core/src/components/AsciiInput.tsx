@@ -1,10 +1,24 @@
 import React from "react";
 import { useAsciiTheme } from '../contexts/ThemeContext';
+import { useTerminalSounds } from '../sound/hooks';
 
 export const AsciiInput: React.FC<
   React.InputHTMLAttributes<HTMLInputElement>
-> = ({ className = "", style, ...props }) => {
+> = ({ className = "", style, onKeyDown, ...props }) => {
   const { theme } = useAsciiTheme();
+  const { playKeyPress, playEnter, playBackspace } = useTerminalSounds();
+  
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      playEnter();
+    } else if (e.key === 'Backspace') {
+      playBackspace();
+    } else if (e.key.length === 1) {
+      // Only play sound for printable characters
+      playKeyPress();
+    }
+    onKeyDown?.(e);
+  };
   
   return (
     <span 
@@ -17,6 +31,7 @@ export const AsciiInput: React.FC<
       <span className="select-none">{theme.characters.bracketLeft}</span>
       <input
         {...props}
+        onKeyDown={handleKeyDown}
         className={`
           font-mono bg-transparent border-none outline-none px-1 w-40
           ${className}

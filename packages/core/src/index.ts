@@ -37,6 +37,18 @@ export * from "./contexts/ThemeContext";
 // Animation system exports
 export * from "./animations";
 
+// Sound system exports
+export * from "./sound";
+
+// ASCII Art system exports
+export * from "./ascii-art";
+
+// Code Editor system exports
+export * from "./code-editor";
+
+// Network Visualizer system exports
+export * from "./network-visualizer";
+
 // Data visualization exports
 export * from "./components/data-visualization";
 
