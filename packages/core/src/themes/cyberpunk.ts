@@ -9,11 +9,13 @@ export const cyberpunkTheme: AsciiTheme = {
     success: '#00ff41',      // Bright green
     warning: '#ffaa00',      // Orange
     error: '#ff0040',        // Hot pink
+    errorBackground: '#330000',       // Dark red
     info: '#00d4ff',         // Electric blue
     background: '#0a0a0a',   // Deep black
     surface: '#1a0a1a',      // Dark magenta tint
     text: '#ffffff',         // White
     textSecondary: '#ff00ff', // Magenta
+    muted: '#666666',              // Medium gray
     border: '#ff00ff',       // Magenta
     accent: '#00ffff',       // Cyan
   },

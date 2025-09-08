@@ -9,11 +9,13 @@ export const retroTheme: AsciiTheme = {
     success: '#88ff00',      // Light green
     warning: '#ffff00',      // Yellow
     error: '#ff4400',        // Red-orange
+    errorBackground: '#330000',       // Dark red
     info: '#00aaff',         // Blue
     background: '#1a0f00',   // Dark amber background
     surface: '#2a1500',      // Darker amber
     text: '#ffb000',         // Amber
     textSecondary: '#cc8800', // Dark amber
+    muted: '#666666',              // Medium gray
     border: '#ffb000',       // Amber
     accent: '#ff8800',       // Orange
   },

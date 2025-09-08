@@ -17,6 +17,9 @@ export interface CodeEditorTheme {
     type: string;
     constant: string;
     punctuation: string;
+    whitespace: string;
+    identifier: string;
+    unknown: string;
     error: string;
     warning: string;
     info: string;
@@ -154,6 +157,9 @@ export const ASCII_CODE_THEMES: Record<string, CodeEditorTheme> = {
       type: '#0099ff',
       constant: '#ff9900',
       punctuation: '#cccccc',
+      whitespace: '#333333',
+      identifier: '#00ff00',
+      unknown: '#888888',
       error: '#ff0000',
       warning: '#ffaa00',
       info: '#0088ff'
@@ -184,6 +190,9 @@ export const ASCII_CODE_THEMES: Record<string, CodeEditorTheme> = {
       type: '#aaaa00',
       constant: '#ffaa00',
       punctuation: '#cccccc',
+      whitespace: '#444444',
+      identifier: '#ffb000',
+      unknown: '#999999',
       error: '#ff0000',
       warning: '#ffaa00',
       info: '#0088ff'
@@ -214,6 +223,9 @@ export const ASCII_CODE_THEMES: Record<string, CodeEditorTheme> = {
       type: '#0099cc',
       constant: '#ffcc00',
       punctuation: '#cccccc',
+      whitespace: '#444444',
+      identifier: '#00ffff',
+      unknown: '#aaaaaa',
       error: '#ff0000',
       warning: '#ffaa00',
       info: '#0088ff'
@@ -244,6 +256,9 @@ export const ASCII_CODE_THEMES: Record<string, CodeEditorTheme> = {
       type: '#8be9fd',
       constant: '#bd93f9',
       punctuation: '#f8f8f2',
+      whitespace: '#44475a',
+      identifier: '#f8f8f2',
+      unknown: '#6272a4',
       error: '#ff5555',
       warning: '#ffb86c',
       info: '#8be9fd'

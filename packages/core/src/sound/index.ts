@@ -7,7 +7,10 @@ export * from './hooks';
 // Re-export commonly used items for convenience
 export { 
   AsciiSoundProvider, 
-  useAsciiSound,
+  useAsciiSound
+} from './AsciiSoundContext';
+
+export {
   useButtonSounds,
   useTerminalSounds,
   useFormSounds,

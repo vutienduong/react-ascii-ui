@@ -4,11 +4,13 @@ export interface AsciiThemeColors {
   success: string;
   warning: string;
   error: string;
+  errorBackground: string;
   info: string;
   background: string;
   surface: string;
   text: string;
   textSecondary: string;
+  muted: string;
   border: string;
   accent: string;
 }

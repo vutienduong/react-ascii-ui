@@ -99,6 +99,7 @@ export interface NetworkVisualizerOptions {
   gridSize?: number;
   nodeSpacing?: number;
   edgeLength?: number;
+  soundEffects?: boolean;
 }
 
 export type LayoutType = 

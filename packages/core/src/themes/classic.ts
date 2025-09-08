@@ -9,11 +9,13 @@ export const classicTheme: AsciiTheme = {
     success: '#00ff00',      // Green
     warning: '#ffff00',      // Yellow
     error: '#ff0000',        // Red
+    errorBackground: '#330000', // Dark red
     info: '#00ffff',         // Cyan
     background: '#000000',   // Black
     surface: '#111111',      // Dark gray
     text: '#ffffff',         // White
     textSecondary: '#cccccc', // Light gray
+    muted: '#666666',        // Medium gray
     border: '#ffffff',       // White
     accent: '#00ff00',       // Green
   },

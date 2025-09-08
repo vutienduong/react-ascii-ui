@@ -5,13 +5,13 @@ export * from './AsciiNetworkVisualizer';
 export * from './hooks';
 
 // Re-export commonly used items for convenience
-export {
-  AsciiNetworkVisualizer,
+export { AsciiNetworkVisualizer } from './AsciiNetworkVisualizer';
+export { 
   useNetworkVisualizer,
   useNetworkAnalysis,
   useNetworkMonitoring,
   useNetworkPaths
-} from './AsciiNetworkVisualizer';
+} from './hooks';
 
 export {
   NetworkLayoutEngine,

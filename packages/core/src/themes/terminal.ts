@@ -9,11 +9,13 @@ export const terminalTheme: AsciiTheme = {
     success: '#4ade80',      // Green
     warning: '#fbbf24',      // Amber
     error: '#ef4444',        // Red
+    errorBackground: '#330000',       // Dark red
     info: '#60a5fa',         // Blue
     background: '#000000',   // Black
     surface: '#1f1f1f',      // Dark gray
     text: '#ffffff',         // White
     textSecondary: '#a3a3a3', // Light gray
+    muted: '#666666',              // Medium gray
     border: '#404040',       // Medium gray
     accent: '#10b981',       // Emerald
   },

@@ -9,11 +9,13 @@ export const neonTheme: AsciiTheme = {
     success: '#00ff7f',      // Spring green
     warning: '#ffa500',      // Orange
     error: '#ff006e',        // Neon pink
+    errorBackground: '#330000',       // Dark red
     info: '#00bfff',         // Deep sky blue
     background: '#0a0a0f',   // Very dark blue
     surface: '#1a1a2e',      // Dark blue-purple
     text: '#ffffff',         // White
     textSecondary: '#00d4ff', // Electric blue
+    muted: '#666666',              // Medium gray
     border: '#00d4ff',       // Electric blue
     accent: '#ff1493',       // Deep pink
   },

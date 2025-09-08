@@ -9,11 +9,13 @@ export const matrixTheme: AsciiTheme = {
     success: '#00ff41',      // Matrix green
     warning: '#41ff00',      // Light green
     error: '#ff4141',        // Red (anomaly)
+    errorBackground: '#330000',       // Dark red
     info: '#00aa22',         // Medium green
     background: '#000000',   // Pure black
     surface: '#001100',      // Very dark green
     text: '#00ff41',         // Matrix green
     textSecondary: '#008f11', // Dark green
+    muted: '#666666',              // Medium gray
     border: '#00ff41',       // Matrix green
     accent: '#41ff00',       // Light green
   },

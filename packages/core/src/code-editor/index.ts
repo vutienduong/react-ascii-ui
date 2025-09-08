@@ -5,11 +5,11 @@ export * from './AsciiCodeEditor';
 export * from './hooks';
 
 // Re-export commonly used items for convenience
-export {
-  AsciiCodeEditor,
+export { AsciiCodeEditor } from './AsciiCodeEditor';
+export { 
   useCodeEditor,
   useCodeTabs
-} from './AsciiCodeEditor';
+} from './hooks';
 
 export {
   LANGUAGE_DEFINITIONS,

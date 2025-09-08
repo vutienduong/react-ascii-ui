@@ -9,11 +9,13 @@ export const minimalTheme: AsciiTheme = {
     success: '#22c55e',      // Green
     warning: '#f59e0b',      // Amber
     error: '#ef4444',        // Red
+    errorBackground: '#330000',       // Dark red
     info: '#3b82f6',         // Blue
     background: '#ffffff',   // White
     surface: '#f8f9fa',      // Very light gray
     text: '#000000',         // Black
     textSecondary: '#6b7280', // Medium gray
+    muted: '#666666',              // Medium gray
     border: '#d1d5db',       // Light gray
     accent: '#1f2937',       // Dark gray
   },

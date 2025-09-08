@@ -5,13 +5,13 @@ export * from './AsciiArtGenerator';
 export * from './hooks';
 
 // Re-export commonly used items for convenience
-export {
-  AsciiArtGenerator,
+export { AsciiArtGenerator } from './AsciiArtGenerator';
+export { 
   useAsciiArt,
   useWebcamAsciiArt,
   useBatchAsciiArt,
   useRealTimeAsciiArt
-} from './AsciiArtGenerator';
+} from './hooks';
 
 export {
   convertToAsciiArt,
