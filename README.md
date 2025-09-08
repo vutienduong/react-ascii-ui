@@ -1,10 +1,36 @@
 # React ASCII UI
 
-A complete React + Tailwind component library for **ASCII-style UIs** 🎨
+A complete React component library for **ASCII-style UIs** with **advanced features** 🎨
 
-Perfect for retro dashboards, hackathon projects, developer tools, and adding some ASCII flair to your apps!
+Perfect for retro dashboards, hackathon projects, developer tools, network monitoring, code editors, and adding ASCII flair to your apps!
 
 📚 **[View Documentation & Examples →](https://react-ascii-ui-docs.vercel.app)**
+
+## 🌟 **NEW: Advanced Features**
+
+### 🔊 Sound System
+**Retro audio feedback** with Web Audio API integration:
+- 20+ sound presets (button clicks, keyboard typing, system alerts)
+- Custom hooks: `useButtonSounds()`, `useTerminalSounds()`, `useSystemSounds()`
+- Master volume controls and browser-compatible audio resumption
+
+### 🎨 ASCII Art Generator  
+**Image-to-ASCII conversion** with real-time processing:
+- Multiple character sets (detailed, simple, blocks, dots, classic)
+- Webcam live preview and batch image processing
+- Advanced options: brightness, contrast, dithering algorithms
+
+### 💻 Code Editor
+**Full-featured ASCII-style code editor** with syntax highlighting:
+- Multi-language support (JS, TS, Python, CSS, HTML, JSON)
+- 4 retro themes (green terminal, amber, cyan, classic)
+- Multi-tab editing, auto-indentation, bracket matching
+
+### 🔗 Network Visualizer
+**Interactive network topology diagrams** with ASCII aesthetics:
+- 5 layout algorithms (force-directed, hierarchical, circular, grid, tree)
+- Real-time monitoring with status updates and event tracking  
+- Network analysis: path finding, metrics calculation, hub detection
 
 ## Install
 
@@ -66,7 +92,7 @@ See the full potential with **10 interactive demo apps**:
 
 ## 📦 Complete Component Library
 
-**31 components** across 4 tiers - everything you need for ASCII UIs:
+**50+ components and systems** across 6 categories - everything you need for ASCII UIs:
 
 ### 🔧 Forms & Inputs
 - `AsciiButton` - `[ Click Me ]` clickable buttons
@@ -103,14 +129,30 @@ See the full potential with **10 interactive demo apps**:
 - `AsciiTree` - Hierarchical data with `[+]` expansion
 - `AsciiPopover` - Contextual overlays with smart positioning
 
+### 🚀 **Advanced Systems**
+- `AsciiSoundProvider` - Complete audio system with retro sound effects
+- `AsciiArtGenerator` - Real-time image-to-ASCII conversion with webcam support
+- `AsciiCodeEditor` - Multi-language code editor with syntax highlighting
+- `AsciiNetworkVisualizer` - Interactive network topology diagrams
+
+### 🎵 **Sound Hooks**
+- `useButtonSounds()` - Click and hover audio feedback
+- `useTerminalSounds()` - Keyboard typing simulation  
+- `useFormSounds()` - Form submission and validation audio
+- `useSystemSounds()` - Notifications, alerts, and system events
+- `useAmbientSounds()` - Background static and atmospheric audio
+
 ## 🎯 Features
 
 - **TypeScript** - Fully typed with IntelliSense support
-- **Tailwind CSS** - Styled with utility classes
-- **Accessible** - Keyboard navigation and ARIA support  
+- **Web Audio API** - Real-time sound generation and audio feedback
+- **Advanced Image Processing** - Canvas-based ASCII art conversion
+- **Multi-language Syntax Highlighting** - Custom tokenizers for 6+ languages
+- **Interactive Network Diagrams** - SVG-based topology visualization
+- **Accessible** - Keyboard navigation, ARIA support, and screen reader friendly
 - **Consistent API** - Predictable props across all components
-- **Customizable** - Color themes, sizes, and variants
-- **Zero Dependencies** - Only peer deps: React 18+ and Tailwind
+- **Customizable Themes** - Multiple ASCII color schemes and styling options
+- **Performance Optimized** - Efficient rendering and memory management
 
 ## 🎨 Styling
 
@@ -132,11 +174,14 @@ All components support `className` prop for customization and follow consistent 
 
 ## 🚀 Perfect For
 
-- **Developer Tools** - CLIs, terminals, coding environments
-- **Retro Dashboards** - Monitoring, analytics, admin panels  
-- **Hackathon Projects** - Stand out with unique ASCII styling
-- **Easter Eggs** - Hidden ASCII modes in existing apps
-- **Prototyping** - Quick and distinctive UI mockups
+- **Developer Tools** - CLIs, terminals, code editors, network monitoring
+- **Retro Dashboards** - System monitoring, analytics, admin panels with real-time updates
+- **Creative Applications** - ASCII art generators, image processing tools, multimedia apps
+- **Network Administration** - Topology visualization, status monitoring, diagnostic tools
+- **Audio Applications** - Music players, sound effects, interactive audio experiences
+- **Hackathon Projects** - Stand out with unique ASCII styling and advanced features
+- **Easter Eggs** - Hidden ASCII modes, retro themes, and nostalgic experiences
+- **Educational Tools** - Learning interfaces for programming, networking, and system administration
 
 ## 📝 License
 
